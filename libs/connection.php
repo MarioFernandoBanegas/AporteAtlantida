@@ -1,8 +1,8 @@
 <?php
 
-$serverName ="A01DINFA4725\SQLEXPRESS";
- $usr="";
- $pwd="";
+$serverName ="localhost";
+ $usr="sa";
+ $pwd="1234";
  $db="sv";
 
 $connectionInfo = array("UID" => $usr, "PWD" => $pwd, "Database" => $db);

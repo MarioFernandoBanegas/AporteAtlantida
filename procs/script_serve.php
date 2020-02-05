@@ -28,15 +28,18 @@
 			$ram = $_POST['ram'];
 			$e_pro = $_POST['e_pro'];
 			$e_usado = $_POST['e_usado'];
-			$pci = $_POST['pci'];
-			//Dominio
+			$pci = $_POST['PCI'];
+			$dominio = $_POST['dominio'];
+			$fecha = $_POST['fecha'];
 			//NODO
 			//Fecha de Creacion
 			//Ultima Actualizacion
 			//Estado AV
 
-			$sql = "INSERT INTO SERVIDORES (ID_SERVIDOR,ID_ESTADO_VMTOOL, ID_SO, ID_ADMINISTRADOR, ID_HOST, ID_DBA, ID_TIPO, ID_AREA, ID_SERVICIO, ID_ESTADO, IP_SERVIDOR, NOM_SERVIDOR,NO_PROCESADORES, RAM,ALM_PROVISIONADO, ALM_ENUSO,PCI)
-			VALUES('$id_servidor','$stateVMTOOL','$os','$responsable','$host','$db','$type','$zona','$app','$power','$ipservidor','$nombre','$cpu','$ram','$e_pro','$e_usado','$pci')";
+			$sql = "INSERT INTO SERVIDORES (ID_SERVIDOR,ID_ESTADO_VMTOOL, ID_SO, ID_ADMINISTRADOR, ID_HOST, ID_DBA, ID_TIPO, ID_AREA, ID_SERVICIO, ID_ESTADO,
+				IP_SERVIDOR, NOM_SERVIDOR,NO_PROCESADORES, RAM,ALM_PROVISIONADO, ALM_ENUSO,PCI,EN_DOMINIO,FECHA_CREACION)
+			VALUES('$id_servidor','$stateVMTOOL','$os','$responsable','$host','$db','$type','$zona','$app','$power','$ipservidor','$nombre',
+				'$cpu','$ram','$e_pro','$e_usado','$pci','$dominio','$fecha')";
 			$recurso = sqlsrv_prepare($conn,$sql);
 			if ( sqlsrv_execute($recurso) ) {
 				echo "Agregado correctamente";

@@ -333,7 +333,7 @@ if (@!$_SESSION['user']) {
           </div>
           <p>
           <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
-          <input type="hidden" name="accion" value="<?php echo $_GET['accion'] ?>">
+          <input type="hidden" name="accion" value="insert">
           <center><input onclick="return confirm('desea actualizar el registro?')" type="submit" value="Editar" class="btn btn-success btn-block" ></center>
         </p>
         </form>

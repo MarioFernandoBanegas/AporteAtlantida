@@ -64,6 +64,10 @@
                 <label for="exampleInputLastName">Espacio Usado</label>
                 <input onkeypress='return event.charCode >= 48 && event.charCode <= 57' style="text-align:center" value "<?php error_reporting(0)?>" value="<?php echo $e_usado ?>" type="text" class="form-control" id="e_usado" name="e_usado" placeholder="-----------" required>
               </div>
+              <div class="col-md-4">
+              <label for="exampleInputLastName">Fecha de Creacion:</label>
+              <input type="date" id="fecha" name="fecha" value="2020-02-04" min="2000-01-01" max="2020-02-04">
+              </div>
               <?php //////////////////////////////////////////////////////////////////// ?>
               <div class="col-md-4">
                 <div >
@@ -123,6 +127,17 @@
                         <?php
                       }
                       ?>
+                  </select>
+                  </p>
+                </div>
+              </div>
+              <?php //////////////////////////////////////////////////////////////////// ?>
+              <div class="col-md-4">
+                <div >
+                  <p>Dominio:
+                    <select style="width: 194px" name="dominio" id="dominio">
+                    <option value="0">Si</option>
+                    <option value="1">No</option>
                   </select>
                   </p>
                 </div>

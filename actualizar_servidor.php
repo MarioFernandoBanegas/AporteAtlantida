@@ -29,8 +29,8 @@
 		if($_POST['accion'] == 'insert')
 		{
 
-			$id_servidor= $id;
-			$stateVMTOOL = $_POST['a24'];
+			$id_servidor= $_POST['id'];
+			$stateVMTOOL = $_POST['a25'];
 			/*$os = $_POST['os'];
 			$responsable = $_POST['responsable'];
 			$host = $_POST['host'];
@@ -59,6 +59,9 @@
 				header('Location: ListaServidores.php'); //redireccion
 			}else
 			echo "Error";
+		}
+		else {
+			echo "Error2";
 		}
 	}else
 	{

@@ -24,8 +24,7 @@
   <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
   <link href="../css/sb-admin.css" rel="stylesheet">
-  <link rel="shortcut icon" href="https://www.baccredomatic.com/sites/all/themes/custom/foundation_bac/bac-favicon.ico" />
-  <link rel="shortcut icon" href="../media/bac-favicon.ico" />
+  <link rel="shortcut icon" href="../media/favicon.png" />
 
 </head>
 
@@ -65,9 +64,22 @@
                 <input onkeypress='return event.charCode >= 48 && event.charCode <= 57' style="text-align:center" value "<?php error_reporting(0)?>" value="<?php echo $e_usado ?>" type="text" class="form-control" id="e_usado" name="e_usado" placeholder="-----------" required>
               </div>
               <div class="col-md-4">
-              <label for="exampleInputLastName">Fecha de Creacion:</label>
-              <input type="date" id="fecha" name="fecha" value="2020-02-04" min="2000-01-01" max="2020-02-04">
+                <label for="exampleInputLastName">Estado AV</label>
+                <input onkeypress='return event.charCode >= 48 && event.charCode <= 57' style="text-align:center" value "<?php error_reporting(0)?>" value="<?php echo $estadoav ?>" type="text" class="form-control" id="estadoav" name="estadoav" placeholder="-----------" required>
               </div>
+              <div class="col-md-4">
+                <label for="exampleInputLastName">ID NODO</label>
+                <input onkeypress='return event.charCode >= 48 && event.charCode <= 57' style="text-align:center" value "<?php error_reporting(0)?>" value="<?php echo $nodo ?>" type="text" class="form-control" id="nodo" name="nodo" placeholder="-----------" required>
+              </div>
+              <div class="col-md-4">
+              <label for="exampleInputLastName">Fecha de Creacion:</label>
+              <input type="date" id="fecha" name="fecha" value="<?php echo date("Y-d-m")?>" min="2000-01-01" max="<?php echo date("Y-d-m")?>" style="width: 194px">
+              </div>
+              <div class="col-md-4">
+              <label for="exampleInputLastName">Ultima Actualizacion:</label>
+              <input type="date" id="ultima" name="ultima" value="<?php echo date("Y-d-m")?>" min="2000-01-01" max="<?php echo date("Y-d-m")?>" style="width: 194px">
+              </div>
+
               <?php //////////////////////////////////////////////////////////////////// ?>
               <div class="col-md-4">
                 <div >
@@ -287,15 +299,15 @@
             </div>
           </div>
           */?>
-          <p>
-          <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
-          <input type="hidden" name="accion" value="<?php echo $_GET['accion'] ?>">
-          <center><input type="submit" value="Guardar" class="btn btn-primary btn-block" ></center>
-
-        </p>
         </form>
+        <p>
+        <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
+        <input type="hidden" name="accion" value="<?php echo $_GET['accion'] ?>">
+        <center><input type="submit" value="Guardar" class="btn btn-primary btn-block" ></center>
+      </p>
       </div>
     </div>
+
   </div>
   <!-- Bootstrap core JavaScript-->
   <script src="../vendor/jquery/jquery.min.js"></script>

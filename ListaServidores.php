@@ -221,10 +221,10 @@
           <i class="fa fa-table"></i>Registro Servidores</div>
         <div class="card-body">
           <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="500%" cellspacing="0">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>
                 <tr>
-                  <th style="visibility: hidden">ID</th>
+
                   <th>IP</th>
                   <th>Servidor</th>
                   <th>ESTADO</th>
@@ -246,8 +246,8 @@
                   <th>ALMACENAMIENTO PROVICIONADO</th>
                   <th>ID NODO</th>
                   <TH>ESTADO AV</TH>
-                  <th>Eliminar</th>
-                  <TH>Editar</TH>
+                  <th></th>
+                  <TH></TH>
                 </tr>
               </thead>
 
@@ -255,7 +255,7 @@
               $sqla = ("SELECT s.IP_SERVIDOR,s.NOM_SERVIDOR,e.NOM_ESTADO,r.NOM_ADMINISTRADOR,iif(s.EN_DOMINIO='0','No','Si') as Dominio,
                 h.NOM_HOST,s.FECHA_CREACION,s.ULTIMA_ACTUALIZACION,v.NOM_ESTADO_VMTOOL,iif(s.PCI ='0','No','Si') as PCI,
                 o.NOM_SO,d.NOM_DBA,t.NOM_TIPO,a.NOM_AREA,ser.NOM_SERVICIO,s.NO_PROCESADORES,s.RAM,
-                s.ALM_ENUSO,s.ALM_PROVISIONADO,s.ID_NODO,iif(s.ESTADO_AV ='0','No','Si') as ESTADOAV from servidores s
+                s.ALM_ENUSO,s.ALM_PROVISIONADO,s.ID_NODO,s.ESTADO_AV from servidores s
                 inner join CAT_ESTADOS e on s.ID_ESTADO = e.ID_ESTADO
                 inner join CAT_RESPONSABLES r on s.ID_ADMINISTRADOR = r.ID_ADMINISTRADOR
                 inner join CAT_ESTADO_VMTOOLS v on s.ID_ESTADO_VMTOOL = v.ID_ESTADO_VMTOOL
@@ -272,7 +272,7 @@
                <?php while ($arreglo=sqlsrv_fetch_array($query)){
                 ?>
                  <tr>
-                  <td style='visibility: hidden'><?php echo$arreglo[0]?></td>
+                  <?php $arreglo[0]?>
                   <td><?php  echo$arreglo[0]?></td>
                   <td><?php  echo$arreglo[1]?></td>
                   <td><?php  echo$arreglo[2]?></td>
@@ -293,6 +293,7 @@
                   <td><?php  echo$arreglo[17]?></td>
                   <td><?php  echo$arreglo[18]?></td>
                   <td><?php  echo$arreglo[19]?></td>
+                  <td><?php  echo$arreglo[20]?></td>
 
                   <?php
                   echo "<th><a  title='eliminar' href='ListaServidores.php?id=$arreglo[0]&idborrar=2' onclick=\"return confirm('desea eliminar el regisro?')\"><img src='media/eliminar1.png' text='eliminar' height='40' width='40'  class='img-rounded'/>eliminar</a></th>";

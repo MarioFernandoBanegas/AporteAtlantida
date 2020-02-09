@@ -9,13 +9,14 @@
 
 		if($_POST['accion'] == 'insert')
 		{
-			$name_power = $_POST['name_power'];
-			$sql = "INSERT INTO CAT_ESTADOS (NOM_ESTADO)VALUES('$name_power')";
+			$name_aplication = $_POST['name_cluster'];
+			$ip = $_POST['ip'];
+			$sql = "INSERT INTO CAT_CLUSTER (NOM_CLUSTER,IP_VCENTER) VALUES('$name_aplication','$ip')";
 			$recurso = sqlsrv_prepare($conn,$sql);
 
 			if (sqlsrv_execute($recurso)) {
 				echo "Agregado correctamente";
-				header('Location: ../administracion/Estados_Equipo/ListaEstados.php'); //redireccion
+				header('Location: ../administracion/Cluster/listacluster.php'); //redireccion
 				# code...
 			}else
 			echo "Error";

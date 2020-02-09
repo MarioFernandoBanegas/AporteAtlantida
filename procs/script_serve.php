@@ -31,15 +31,17 @@
 			$pci = $_POST['PCI'];
 			$dominio = $_POST['dominio'];
 			$fecha = $_POST['fecha'];
+			$ultima= $_POST['ultima'];
+			$nodo= $_POST['nodo'];
+			$estadoav= $_POST['estadoav'];
 			//NODO
-			//Fecha de Creacion
-			//Ultima Actualizacion
 			//Estado AV
 
 			$sql = "INSERT INTO SERVIDORES (ID_SERVIDOR,ID_ESTADO_VMTOOL, ID_SO, ID_ADMINISTRADOR, ID_HOST, ID_DBA, ID_TIPO, ID_AREA, ID_SERVICIO, ID_ESTADO,
-				IP_SERVIDOR, NOM_SERVIDOR,NO_PROCESADORES, RAM,ALM_PROVISIONADO, ALM_ENUSO,PCI,EN_DOMINIO,FECHA_CREACION)
+				IP_SERVIDOR, NOM_SERVIDOR,NO_PROCESADORES, RAM,ALM_PROVISIONADO, ALM_ENUSO,PCI,EN_DOMINIO,FECHA_CREACION,ULTIMA_ACTUALIZACION,
+			ESTADO_AV,ID_NODO)
 			VALUES('$id_servidor','$stateVMTOOL','$os','$responsable','$host','$db','$type','$zona','$app','$power','$ipservidor','$nombre',
-				'$cpu','$ram','$e_pro','$e_usado','$pci','$dominio','$fecha')";
+				'$cpu','$ram','$e_pro','$e_usado','$pci','$dominio','$fecha','$ultima','$estadoav','$nodo')";
 			$recurso = sqlsrv_prepare($conn,$sql);
 			if ( sqlsrv_execute($recurso) ) {
 				echo "Agregado correctamente";

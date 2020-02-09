@@ -334,86 +334,96 @@
               <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Responsables</a>
               <ul class="sidenav-third-level collapse" id="collapseMulti2">
                 <li>
-                  <a href="cats/resp/Responsable.php?accion=insert">Registrar Responsable</a>
+                  <a href="administracion/Responsable/Responsable.php?accion=insert">Registrar Responsable</a>
                 </li>
                 <li>
-                  <a href="administracion/ListaResponsables.php">Listar Responsable</a>
+                  <a href="administracion/Responsable/ListaResponsables.php">Listar Responsable</a>
                 </li>
               </ul>
               <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti3">Estados de Equipo</a>
               <ul class="sidenav-third-level collapse" id="collapseMulti3">
                 <li>
-                  <a href="administracion/Power.php?accion=insert">Registrar Estado</a>
+                  <a href="administracion/Estados_Equipo/Power.php?accion=insert">Registrar Estado</a>
                 </li>
                 <li>
-                  <a href="administracion/ListaEstados.php">Listar Estado</a>
+                  <a href="administracion/Estados_Equipo/ListaEstados.php">Listar Estado</a>
                 </li>
               </ul>
 
-              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti4">Aplicaciones</a>
+              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti4">Gestor DB</a>
               <ul class="sidenav-third-level collapse" id="collapseMulti4">
                 <li>
-                  <a href="administracion/Aplication.php?accion=insert">Registrar Aplicacion</a>
+                  <a href="administracion/Aplicacion/Aplication.php?accion=insert">Registrar Gestor DB</a>
                 </li>
                 <li>
-                  <a href="administracion/ListaAplicaciones.php">Listar Aplicaciones</a>
+                  <a href="administracion/Aplicacion/ListaAplicaciones.php">Listar Gestor DB</a>
                 </li>
               </li>
             </ul>
             <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti5">Sistemas Operativos</a>
             <ul class="sidenav-third-level collapse" id="collapseMulti5">
               <li>
-                <a href="administracion/OS.php?accion=insert">Registrar OS</a>
+                <a href="administracion/SO/OS.php?accion=insert">Registrar OS</a>
               </li>
               <li>
-                <a href="administracion/ListaOS.php">Listar OS</a>
+                <a href="administracion/SO/ListaOS.php">Listar OS</a>
               </li>
             </ul>
             <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti6">Zonas</a>
             <ul class="sidenav-third-level collapse" id="collapseMulti6">
               <li>
-                <a href="administracion/Zone.php?accion=insert">Registrar Zona</a>
+                <a href="administracion/Zonas/Zone.php?accion=insert">Registrar Zona</a>
               </li>
               <li>
-                <a href="administracion/ListaZonas.php">Listar Zona</a>
+                <a href="administracion/Zonas/ListaZonas.php">Listar Zona</a>
               </li>
             </ul>
             <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti7">Tipo de Maquina</a>
             <ul class="sidenav-third-level collapse" id="collapseMulti7">
               <li>
-                <a href="administracion/Type.php?accion=insert">Registrar Tipo Maquina</a>
+                <a href="administracion/Tipo/Type.php?accion=insert">Registrar Tipo Maquina</a>
               </li>
               <li>
-                <a href="administracion/ListaType.php">Tipos de Maquinas</a>
+                <a href="administracion/Tipo/ListaType.php">Tipos de Maquinas</a>
               </li>
             </ul>
-            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti8">Conexiones</a>
+            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti8">Cluster</a>
             <ul class="sidenav-third-level collapse" id="collapseMulti8">
               <li>
-                <a href="administracion/conexiones.php?accion=insert">Registrar Tipo Conexion</a>
+                <a href="administracion/Cluster/cluster.php?accion=insert">Registrar Cluster</a>
               </li>
               <li>
-                <a href="administracion/ListaConexion.php">Tipos de Conexion</a>
+                <a href="administracion/Cluster/listacluster.php">Tipos Cluster</a>
               </li>
             </ul>
-            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti9">Gestor de BD</a>
+            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti9">VMTools</a>
             <ul class="sidenav-third-level collapse" id="collapseMulti9">
               <li>
-                <a href="administracion/gestordb.php?accion=insert">Registrar Gestor DB</a>
+                <a href="administracion/vmtools/vmtools.php?accion=insert">Registrar Estado VMTools</a>
               </li>
               <li>
-                <a href="administracion/ListaGestor.php">Listar Gestor DB</a>
+                <a href="administracion/vmtools/listarvmtools.php">Tipos de Estado VMTools</a>
               </li>
             </ul>
-            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti10">PCI/PESI</a>
+            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti10">Host</a>
             <ul class="sidenav-third-level collapse" id="collapseMulti10">
               <li>
-                <a href="administracion/SAS.php?accion=insert">Registrar PCI/PESI</a>
+                <a href="administracion/host/host.php?accion=insert">Registrar un Host</a>
               </li>
               <li>
-                <a href="administracion/ListaSAS.php">Listar PCI/PESI</a>
+                <a href="administracion/host/listarhost.php">Tipos de Host</a>
               </li>
             </ul>
+            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti11">Servicios</a>
+            <ul class="sidenav-third-level collapse" id="collapseMulti11">
+              <li>
+                <a href="administracion/host/host.php?accion=insert">Registrar un Servicio</a>
+              </li>
+              <li>
+                <a href="administracion/host/listarhost.php">Tipos de Servicios</a>
+              </li>
+            </ul>
+
           </li>
         </ul>
       </li>

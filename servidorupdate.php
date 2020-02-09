@@ -25,8 +25,7 @@ if (@!$_SESSION['user']) {
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
-  <link rel="shortcut icon" href="https://www.baccredomatic.com/sites/all/themes/custom/foundation_bac/bac-favicon.ico" />
-  <link rel="shortcut icon" href="media/bac-favicon.ico" />
+  <link rel="shortcut icon" href="media/favicon.png" />
 
 </head>
 
@@ -43,7 +42,7 @@ if (@!$_SESSION['user']) {
     $sql="SELECT s.IP_SERVIDOR,s.NOM_SERVIDOR,e.NOM_ESTADO,r.NOM_ADMINISTRADOR,iif(s.EN_DOMINIO='0','No','Si') as Dominio,
       h.NOM_HOST,s.FECHA_CREACION,s.ULTIMA_ACTUALIZACION,v.NOM_ESTADO_VMTOOL,iif(s.PCI ='0','No','Si') as PCI,
       o.NOM_SO,d.NOM_DBA,t.NOM_TIPO,a.NOM_AREA,ser.NOM_SERVICIO,s.NO_PROCESADORES,s.RAM,
-      s.ALM_ENUSO,s.ALM_PROVISIONADO,s.ID_NODO,iif(s.ESTADO_AV ='0','No','Si') as ESTADOAV from servidores s
+      s.ALM_ENUSO,s.ALM_PROVISIONADO,s.ID_NODO,S.ESTADO_AV from servidores s
       inner join CAT_ESTADOS e on s.ID_ESTADO = e.ID_ESTADO
       inner join CAT_RESPONSABLES r on s.ID_ADMINISTRADOR = r.ID_ADMINISTRADOR
       inner join CAT_ESTADO_VMTOOLS v on s.ID_ESTADO_VMTOOL = v.ID_ESTADO_VMTOOL
@@ -136,6 +135,23 @@ if (@!$_SESSION['user']) {
                 <label onkeypress='return event.charCode >= 48 && event.charCode <= 57' for="exampleInputLastName">Espacio Usado</label>
                 <input style="text-align:center" value="<?php echo $a17 ?>" type="text" class="form-control" name="a17" required>
               </div>
+              <div class="col-md-4">
+                <label onkeypress='return event.charCode >= 48 && event.charCode <= 57' for="exampleInputLastName">Estado AV</label>
+                <input style="text-align:center" value="<?php echo $a19 ?>" type="text" class="form-control" name="a19" required>
+              </div>
+              <div class="col-md-4">
+                <label onkeypress='return event.charCode >= 48 && event.charCode <= 57' for="exampleInputLastName">ID NODO</label>
+                <input style="text-align:center" value="<?php echo $a18 ?>" type="text" class="form-control" name="a18" required>
+              </div>
+              <div class="col-md-4">
+              <label for="exampleInputLastName">Fecha de Creacion:</label>
+              <input type="date" id="fecha" name="fecha" value="<?php echo $a5->format("Y-d-m")?>" min="2000-01-01" max="<?php echo date("Y-d-m")?>" style="width: 194px">
+              </div>
+              <div class="col-md-4">
+              <label for="exampleInputLastName">Ultima Actualizacion:</label>
+              <input type="date" id="ultima" name="ultima" value="<?php echo $a6->format("Y-d-m")?>" min="2000-01-01" max="<?php echo date("Y-d-m")?>" style="width: 194px">
+              </div>
+
               <!-- ************************************************************* -->
               <div class="col-md-4">
               <div >
@@ -157,6 +173,7 @@ if (@!$_SESSION['user']) {
                 </div>
               </div>
               <!-- ************************************************************* -->
+
 
               <div class="col-md-4">
               <div >
@@ -200,6 +217,17 @@ if (@!$_SESSION['user']) {
               <!-- ************************************************************* -->
               <div class="col-md-4">
               <div >
+                <p>Dominio:
+                  <select style="width: 170px" name="a3" id="a3">
+                      <option value="1"<?php if($a3=="Si") {echo "selected";} ?>>Si</option>
+                      <option value="0"<?php if($a3=="No") {echo "selected";} ?>>No</option>
+                  </select>
+                </p>
+                </div>
+              </div>
+              <!-- ************************************************************* -->
+              <div class="col-md-4">
+              <div >
                  <?php
                   $sql = 'SELECT ID_HOST, NOM_HOST FROM CAT_HOSTS';
                   $result = sqlsrv_query($conn,$sql)
@@ -221,9 +249,9 @@ if (@!$_SESSION['user']) {
               <div class="col-md-4">
               <div >
                 <p>PCI:
-                  <select style="width: 170px" name="a37" id="a36">
+                  <select style="width: 170px" name="pcii" id="pcii">
                       <option value="1"<?php if($a8=="Si") echo "selected" ?>> Si </option>
-                      <option value="1"<?php if($a8=="No") echo "selected" ?>> No </option>
+                      <option value="0"<?php if($a8=="No") echo "selected" ?>> No </option>
                   </select>
                 </p>
                 </div>

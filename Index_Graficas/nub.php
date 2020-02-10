@@ -1,13 +1,13 @@
 <?php
   session_start();
-  include "../header.php";
+  include "../DiseñoGraficasIndex.php";
 
   class Servidores
   {
 
     public function listado ( $conn, $cual ) {
       $sqla = ("SELECT a.IP_SERVIDOR, a.NOM_SERVIDOR, b.NOM_SERVICIO, c.NOM_ADMINISTRADOR, d.NOM_SO, e.NOM_ESTADO, a.ID_NODO, a.EN_DOMINIO, a.ESTADO_AV
-        FROM SERVIDORES a 
+        FROM SERVIDORES a
         inner join CAT_SERVICIOS b on a.ID_SERVICIO = b.ID_SERVICIO
         inner join CAT_RESPONSABLES c on a.ID_ADMINISTRADOR = c.ID_ADMINISTRADOR
         inner join CAT_SO d on a.ID_SO = d.ID_SO
@@ -138,7 +138,7 @@
       $val = sqlsrv_fetch_array ( $query ) ;
       return $val[0];
     }
-    
+
     public function top_20( $conn, $cual ) {
       $sql = "SELECT count(*) as conteo, a.ip FROM vulnera a
         inner join SERVIDORES b on a.ip = b.IP_SERVIDOR
@@ -188,14 +188,14 @@
   $EncendidoNUB = $servers->srv_encendido( $conn, 'INFA' );
   $ApagadoNUB = $servers->srv_apagado( $conn, 'INFA' );
   $MonitoreoNUB = $servers->en_solar( $conn, 'INFA' );
-  $top20NUB = $servers->top_20( $conn, 'INFA' ); 
+  $top20NUB = $servers->top_20( $conn, 'INFA' );
   $conAV = $servers->con_av( $conn, 'INFA' );
   $conAVOff = $servers->con_avoff( $conn, 'INFA' );
 
 
   $ultimoParche = $servers->ultimo_parche( $conn );
   $sistemaOperativo = $servers->sistOp( $conn );
-   
+
   $VMTRevisarNUB = 0 ;
   if ( !$VMTRevNUB === false ) {
     while ( $row = sqlsrv_fetch_array( $VMTRevNUB ) ) {
@@ -221,196 +221,6 @@
     }
   }
 ?>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Admin-ServersParch</title>
-  <!-- Bootstrap core CSS-->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template-->
-  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <!-- Page level plugin CSS-->
-  <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-  <!-- Custom styles for this template-->
-  <link href="../css/sb-admin.css" rel="stylesheet">
-  <link rel="shortcut icon" href="../media/favicon.png" />
-</head>
-
-<body class="fixed-nav sticky-footer bg-dark"  id="page-top">
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a href="index.php"><img src="../media/logo.png" height="25" width="80"></a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="../index.php">
-            <i class="fa fa-fw fa-dashboard"></i>
-            <span class="nav-link-text">Dashboard</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Desglose">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseDesglose" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-area-chart"></i>
-            <span class="nav-link-text">Desglose Dashboard</span>
-          </a>
-          <ul class="sidenav-second-level collapse" id="collapseDesglose">
-            <li><a href="crit.php">Críticos</a></li>
-            <li><a href="prd.php">Producción</a></li>
-            <li><a href="nub.php">Nube Privada</a></li>
-            <li><a href="mon.php">Monitor</a></li>
-            <li><a href="dev.php">Desarrollo / Calidad</a></li>
-          </ul>
-        </li>
-        
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Servers">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-sitemap"></i>
-            <span class="nav-link-text">Servers</span>
-          </a>
-          <ul class="sidenav-second-level collapse" id="collapseComponents">
-            <li><a href="../server/traer.php">Cargar de VMan</a></li>
-            <li><a href="../server/serve.php?accion=insert">Registrar Servidor</a></li>
-          </ul>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Seguridad">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-wrench"></i>
-            <span class="nav-link-text">Vulnerabilidades</span>
-          </a>
-
-          <ul class="sidenav-second-level collapse" id="collapseExamplePages">
-            <li><a href="vulnerabilidad/Mantenimiento.php">Importar Vulnerabilidades</a></li>
-            <li><a href="server/ListavUl.php">Listar vulnerabilidades</a></li>
-            <li><a href="vulnerabilidad/Mantenimiento.php">Discovery</a></li>
-            <li><a href="vulnerabilidad/Mantenimiento.php">PCI</a></li>
-            <li><a href="vulnerabilidad/Mantenimiento.php">Pentest</a></li>
-            <li><a href="vulnerabilidad/Mantenimiento.php">Telecomunicaciones</a></li>
-          </ul>
-        </li>
-        <li  style="overflow:auto;color:black;" class="nav-item" data-toggle="tooltip" data-placement="right" title="Administracion">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-link"></i>
-            <span class="nav-link-text">Administracion</span>
-          </a>
-          <ul class="sidenav-second-level collapse" id="collapseMulti">
-            <li>
-              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Responsables</a>
-              <ul class="sidenav-third-level collapse" id="collapseMulti2">
-                <li>
-                  <a href="cats/resp/Responsable.php?accion=insert">Registrar Responsable</a>
-                </li>
-                <li>
-                  <a href="administracion/ListaResponsables.php">Listar Responsable</a>
-                </li>      
-              </ul>
-              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti3">Estados de Equipo</a>
-              <ul class="sidenav-third-level collapse" id="collapseMulti3">
-                <li>
-                  <a href="administracion/Power.php?accion=insert">Registrar Estado</a>
-                </li>
-                <li>
-                  <a href="administracion/ListaEstados.php">Listar Estado</a>
-                </li>      
-              </ul>
-              
-              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti4">Aplicaciones</a>
-              <ul class="sidenav-third-level collapse" id="collapseMulti4">
-                <li>
-                  <a href="administracion/Aplication.php?accion=insert">Registrar Aplicacion</a>
-                </li>
-                <li>
-                  <a href="administracion/ListaAplicaciones.php">Listar Aplicaciones</a>
-                </li>      
-              </li>
-            </ul>
-            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti5">Sistemas Operativos</a>
-            <ul class="sidenav-third-level collapse" id="collapseMulti5">
-              <li>
-                <a href="administracion/OS.php?accion=insert">Registrar OS</a>
-              </li>
-              <li>
-                <a href="administracion/ListaOS.php">Listar OS</a>
-              </li>      
-            </ul>
-            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti6">Zonas</a>
-            <ul class="sidenav-third-level collapse" id="collapseMulti6">
-              <li>
-                <a href="administracion/Zone.php?accion=insert">Registrar Zona</a>
-              </li>
-              <li>
-                <a href="administracion/ListaZonas.php">Listar Zona</a>
-              </li>      
-            </ul>
-            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti7">Tipo de Maquina</a>
-            <ul class="sidenav-third-level collapse" id="collapseMulti7">
-              <li>
-                <a href="administracion/Type.php?accion=insert">Registrar Tipo Maquina</a>
-              </li>
-              <li>
-                <a href="administracion/ListaType.php">Tipos de Maquinas</a>
-              </li>      
-            </ul>
-            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti8">Conexiones</a>
-            <ul class="sidenav-third-level collapse" id="collapseMulti8">
-              <li>
-                <a href="administracion/conexiones.php?accion=insert">Registrar Tipo Conexion</a>
-              </li>
-              <li>
-                <a href="administracion/ListaConexion.php">Tipos de Conexion</a>
-              </li>      
-            </ul>
-            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti9">Gestor de BD</a>
-            <ul class="sidenav-third-level collapse" id="collapseMulti9">
-              <li>
-                <a href="administracion/gestordb.php?accion=insert">Registrar Gestor DB</a>
-              </li>
-              <li>
-                <a href="administracion/ListaGestor.php">Listar Gestor DB</a>
-              </li>      
-            </ul>
-            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti10">PCI/PESI</a>
-            <ul class="sidenav-third-level collapse" id="collapseMulti10">
-              <li>
-                <a href="administracion/SAS.php?accion=insert">Registrar PCI/PESI</a>
-              </li>
-              <li>
-                <a href="administracion/ListaSAS.php">Listar PCI/PESI</a>
-              </li>      
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul class="navbar-nav sidenav-toggler">
-      <li class="nav-item">
-        <a class="nav-link text-center" id="sidenavToggler">
-          <i class="fa fa-fw fa-angle-left"></i>
-        </a>
-      </li>
-    </ul>
-    <ul class="navbar-nav ml-auto">        
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-          <i class="fa fa-fw fa-sign-out"></i>Logout</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="content-wrapper">
-    <div class="container-fluid">
-      <!-- Breadcrumbs-->
-
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
@@ -609,7 +419,7 @@
             </div>
           </div>
         </div>
-        
+
       </div>
 
       <div class="card mb-3">
@@ -625,7 +435,7 @@
                 <tr>
                   <th style="visibility: hidden">ID</th>
                   <th>IP</th>
-                  <th>Nombre</th>                
+                  <th>Nombre</th>
                   <th>Servicio</th>
                   <th>Responsable</th>
                   <th>Sistema Operativo</th>
@@ -638,7 +448,7 @@
                 </tr>
               </thead>
               <tbody>
-                <?php 
+                <?php
                   while ( $arreglo = sqlsrv_fetch_array( $listaServer ) ) {
                   ?>
                   <tr>
@@ -654,7 +464,7 @@
                     <td><?php if( $arreglo[8] == 1 ) echo "Offline"; elseif ( $arreglo[8] == 2 ) echo "Online" ; else echo "NoAV" ; ?></td>
                     <td><?php echo$arreglo[9]?></td>
                     <td><?php if ( $arreglo[10] == 3 ) echo "VMTools OK"; else echo "VMTools Rev";  ?></td>
-                    <?php  
+                    <?php
                     extract($_GET);
                     if(@$idborrar==2){
                       $sqlborrar="DELETE FROM servidores WHERE id=$id";
@@ -663,13 +473,13 @@
                       echo "<script>location.href='ListaServidores.php'</script>";
                     }
                     ?>
-                    <?php  
+                    <?php
                   }
                   ?>
                 </tr>
               </tbody>
             </table>
-            <?php 
+            <?php
             } else {
               ?>
               <div class="alert alert-warning alert-dismissable">
@@ -739,7 +549,7 @@
               labels: ['1 mes', '2 meses', '3 meses', '4-6 meses', '6+ meses'],
               datasets: [{
                   label: '',
-                  data: [ 
+                  data: [
                     <?php
                       echo $uno . "," . $dos . "," . $tres . "," . $cuatro . "," . $mas ;
                     ?>
@@ -750,7 +560,7 @@
                       'rgba(233, 233, 48, 0.2)',
                       'rgba(255, 99, 132, 0.2)',
                       'rgba(255, 99, 132, 0.2)'
-                      
+
                   ],
                   borderColor: [
                       'rgba(115, 249, 119, 1)',
@@ -758,7 +568,7 @@
                       'rgba(233, 233, 48, 1)',
                       'rgba(255, 99, 132, 1)',
                       'rgba(255, 99, 132, 1)'
-                      
+
                   ],
                   borderWidth: 1
               }]
@@ -783,8 +593,8 @@
           data: {
             labels: ['Fuera Dominio', 'En Dominio', 'No Aplica'],
             datasets: [{
-              data: [ 
-                <?php 
+              data: [
+                <?php
                   echo $sinDominioNUB . ',' . $enDominioNUB . "," . $noLinuxNUB ;
                 ?>
                 ],
@@ -802,7 +612,7 @@
           },
           options: {
             responsive: true
-          }  
+          }
       });
     </script>
 
@@ -817,10 +627,10 @@
           ],
           datasets: [{
             label: '',
-            data: [ 
-            <?php 
+            data: [
+            <?php
             echo $noLinuxNUB . ',' . $noWindowsNUB ;
-            ?> 
+            ?>
             ],
             backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
@@ -859,8 +669,8 @@
           data: {
             labels: ['OK', 'Revisar'],
             datasets: [{
-              data: [ 
-                <?php 
+              data: [
+                <?php
                   echo $VMTOkNUB . ',' . $VMTRevisarNUB ;
                 ?>
                 ],
@@ -878,8 +688,8 @@
           },
           options: {
             responsive: true
-          }  
-      }); 
+          }
+      });
     </script>
 
     <script>      <!--  Servidores Encendidos Produccion -->
@@ -890,8 +700,8 @@
           data: {
             labels: ['Encendido', 'Apagado'],
             datasets: [{
-              data: [ 
-                <?php 
+              data: [
+                <?php
                   echo $EncendidoNUB . ',' . $ApagadoNUB ;
                 ?>
                 ],
@@ -909,10 +719,10 @@
           },
           options: {
             responsive: true
-          }  
-      }); 
+          }
+      });
     </script>
- 
+
     <script>      <!--  Servidores Monitoreo Produccion -->
       var ctx = document.getElementById('SolarNUB');
       // For a pie chart
@@ -921,8 +731,8 @@
           data: {
             labels: ['En Monitoreo', 'Sin Monitoreo'],
             datasets: [{
-              data: [ 
-                <?php 
+              data: [
+                <?php
                   echo $MonitoreoNUB . ',' . $SinMonitoNUB ;
                 ?>
                 ],
@@ -940,8 +750,8 @@
           },
           options: {
             responsive: true
-          }  
-      }); 
+          }
+      });
     </script>
 
     <script>      <!--  Servidores Antivirus Produccion -->
@@ -952,8 +762,8 @@
           data: {
             labels: ['AV OK', 'AV Revisar', 'Sin AV'],
             datasets: [{
-              data: [ 
-                <?php 
+              data: [
+                <?php
                   echo $conAV . ',' . $conAVOff . ',' . $sinAV ;
                 ?>
                 ],
@@ -972,8 +782,8 @@
           },
           options: {
             responsive: true
-          }  
-      }); 
+          }
+      });
     </script>
 
     <script>
@@ -990,7 +800,7 @@
               ],
               datasets: [{
                   label: '',
-                  data: [ 
+                  data: [
                     <?php
                       for ( $i = 0; $i < 15; $i++) {
                         echo "'" . $top1[$i] . "', " ;
@@ -1003,7 +813,7 @@
                       'rgba(233, 233, 48, 0.2)',
                       'rgba(255, 99, 132, 0.2)',
                       'rgba(255, 99, 132, 0.2)'
-                      
+
                   ],
                   borderColor: [
                       'rgba(115, 249, 119, 1)',
@@ -1011,7 +821,7 @@
                       'rgba(233, 233, 48, 1)',
                       'rgba(255, 99, 132, 1)',
                       'rgba(255, 99, 132, 1)'
-                      
+
                   ],
                   borderWidth: 1
               }]
@@ -1027,10 +837,10 @@
           }
       });
     </script>
- 
+
 
   </div>
-  <?php include 'footer.php' ?>
+  <?php //include 'footer.php' ?>
 </body>
 
 </html>

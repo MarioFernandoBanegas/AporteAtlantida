@@ -7,7 +7,6 @@
   //header("Location:../index.php");
   }
 ?>
-
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="../index.php">Tablero</a>
@@ -22,48 +21,49 @@
 
       <!-- Example DataTables Card-->
     <div class="card mb-3">
-      <div class="card-header">
-      <i class="fa fa-table"></i>Registro Zonas</div>
-      <div class="card-body">
-        <div class="table-responsive">
-          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-            <thead>
+        <div class="card-header">
+          <i class="fa fa-table"></i>Registro Servicios</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
                 <tr>
                   <th>ID</th>
-                  <th>Nombre</th>
+                  <th>Nombre Servicio</th>
+                  <th>Critico</th>
                   <th>Eliminar</th>
                   <th>Editar</th>
-                </tr>
+                  </tr>
               </thead>
-              <?php
-               $sqla = ("SELECT * FROM CAT_AREAS");
-               $query= sqlsrv_query($conn,$sqla)
-              ?>
-              <tbody>
-               <?php while ($arreglo=sqlsrv_fetch_array($query)){
-                ?>
-                <tr>
-                <td><?php echo $arreglo[0]?></td>
-                <td><?php echo $arreglo[1]?></td>
                 <?php
-                echo "<th> <a title='eliminar' href='ListaZonas.php?id=$arreglo[0]&idborrar=2' onclick=\"return confirm('desea eliminar el regisro?')\"><img src='../../media/eliminar1.png' text='eliminar' height='40' width='40'  class='img-rounded'/>eliminar</a></th>";
+                  $sqla = ("SELECT ID_SERVICIO,NOM_SERVICIO,IIF(CRITICO='1','Si','No') CRITICO FROM CAT_SERVICIOS");
+                  $query= sqlsrv_query($conn,$sqla)
                 ?>
-                <?php
-                echo "<td> <a href='zonaupdate.php?id=$arreglo[0]'><img src='../../media/editar.png' height='40' width='40'  title='editar' class='img-rounded'>editar</a></td>";
+               <tbody>
+                <?php while ($row = sqlsrv_fetch_array($query)) {
                 ?>
-                <?php
-                extract($_GET);
-                if(@$idborrar==2){
-                $sqlborrar="DELETE FROM CAT_AREAS WHERE ID_AREA=$id";
-                $resborrar=sqlsrv_query($conn,$sqlborrar);
-                echo '<script>alert("REGISTRO ELIMINADO")</script> ';
-                echo "<script>location.href='ListaZonas.php'</script>";
+                  <tr>
+                  <td><?php echo $row[0];?></td>
+                  <td><?php echo $row[1];?></td>
+                  <td><?php echo $row[2];?></td>
+                  <?php
+                  echo "<th> <a  title='eliminar' href='listaservicio.php?id=$row[0]&idborrar=2' onclick=\"return confirm('desea eliminar el regisro?')\"><img src='../../media/eliminar1.png' text='eliminar' height='40' width='40'  class='img-rounded'/>eliminar</a></th>";
+                  ?>
+                  <?php
+                  echo "<td> <a href='servicioupdate.php?id=$row[0]'><img src='../../media/editar.png' height='40' width='40'  title='editar' class='img-rounded'>editar</a></td>";
+                  ?>
+                  <?php
+                  extract($_GET);
+                  if(@$idborrar==2){
+                  $sqlborrar="DELETE FROM CAT_SERVICIOS WHERE ID_SERVICIO=$id";
+                  $resborrar=sqlsrv_query($conn,$sqlborrar);
+                  echo "<script>location.href='listaservicio.php'</script>";
+                    }
+                  ?>
+                  <?php
                 }
                 ?>
-                <?php
-                }
-                ?>
-                </tr>
+               </tr>
               </tbody>
             </table>
           </div>
@@ -94,10 +94,10 @@
               <span aria-hidden="true">×</span>
             </button>
           </div>
-         <div class="modal-body">Esta seguro que quiere salir?.</div>
+          <div class="modal-body">Esta seguro que quiere salir?.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="../desconectar.php">Logout</a>
+            <a class="btn btn-primary" href="../../desconectar.php">Logout</a>
           </div>
         </div>
       </div>
@@ -108,13 +108,15 @@
     <!-- Core plugin JavaScript-->
     <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Page level plugin JavaScript-->
+
     <script src="../../vendor/datatables/jquery.dataTables.js"></script>
     <script src="../../vendor/datatables/dataTables.bootstrap4.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="../../js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
     <script src="../../js/sb-admin-datatables.min.js"></script>
+
   </div>
-  <?php // include '../../footer.php' ?>
 </body>
+
 </html>

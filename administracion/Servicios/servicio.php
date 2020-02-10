@@ -14,17 +14,29 @@
       <a href="../../index.php"><img src="../../media/logo.png" height="80" width="100"></a>
       <div class="card-header">Responsables de Servidores</div>
       <div class="card-body">
-        <form action="../../procs/scritp_Responsable.php" method="post" enctype="multipart/form-data">
+        <form action="../../procs/script_servicio.php" method="post" enctype="multipart/form-data">
           <div class="form-group">
             <div class="form-row">
               <div class="col-md-12">
-                <label for="exampleInputName">ID_Responsable</label>
-                <input  style="text-align:center" readonly="readonly" value "<?php error_reporting(0)?>" value="<?php echo $id_responsable?>" type="text" class="form-control" id="id_responsable" name="id_responsable" placeholder="Codigo generado automaticamente">
+                <label for="exampleInputName">ID Sericio</label>
+                <input  style="text-align:center" readonly="readonly" value "<?php error_reporting(0)?>" value="<?php echo $id_servicio?>" type="text" class="form-control" id="id_servicio" name="id_responsable" placeholder="Codigo generado automaticamente">
               </div>
               <div class="col-md-12">
-                <label for="exampleInputLastName">Nombre_Responsable</label>
-                <input style="text-align:center" value "<?php error_reporting(0)?>"value="<?php echo $name_responsable ?>" type="text" class="form-control" id="name_responsable" name="name_responsable" placeholder="Ingrese el Nombre" required>
+                <label for="exampleInputLastName">Nombre Sericio</label>
+                <input style="text-align:center" value "<?php error_reporting(0)?>"value="<?php echo $name_servicio ?>" type="text" class="form-control" id="name_servicio" name="name_servicio" placeholder="Ingrese el Nombre" required>
               </div>
+              <?php //////////////////////////////////////////////////////////////////// ?>
+              <div class="col-md-4">
+                <div >
+                  <p>Critico:
+                  <select style="width: 194px" name="critico" id="critico">
+                    <option value="1">Si</option>
+                    <option value="0">No</option>
+                  </select>
+                  </p>
+                </div>
+              </div>
+              <?php //////////////////////////////////////////////////////////////////// ?>
             </div>
           </div>
           <p>

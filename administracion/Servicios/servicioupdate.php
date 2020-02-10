@@ -16,24 +16,37 @@ if (@!$_SESSION['user']) {
       <div class="card-body">
       <?php
           extract($_GET);
-          $sql="SELECT * FROM CAT_RESPONSABLES WHERE ID_ADMINISTRADOR=$id";
+          $sql="SELECT * FROM CAT_SERVICIOS WHERE ID_SERVICIO=$id";
           $ressql=sqlsrv_query($conn,$sql);
           while ($row=sqlsrv_fetch_array ($ressql)){
             $id=$row[0];
             $user=$row[1];
+            $critico=$row[2];
           }
       ?>
-        <form action="../../updates/actualizar_responsable.php" method="post" enctype="multipart/form-data">
+        <form action="../../updates/actualizar_servicio.php" method="post" enctype="multipart/form-data">
           <div class="form-group">
             <div class="form-row">
               <div class="col-md-12">
-                <label for="exampleInputName">ID_Responsable</label>
+                <label for="exampleInputName">ID Servicio</label>
                 <input  style="text-align:center" readonly="readonly" value="<?php echo $id?>" type="text" class="form-control"  name="id">
               </div>
               <div class="col-md-12">
-                <label for="exampleInputLastName">Nombre_Responsable</label>
+                <label for="exampleInputLastName">Nombre Servicio</label>
                 <input style="text-align:center"  value="<?php echo $user ?>" type="text" class="form-control" name="user"  required>
               </div>
+              <?php //////////////////////////////////////////////////////////////////// ?>
+              <div class="col-md-4">
+                <div >
+                  <p>Critico:
+                  <select style="width: 194px" name="critico" id="critico">
+                    <option value="1" <?php if($critico=='1') {echo "selected";} ?>>Si</option>
+                    <option value="0" <?php if($critico=='0') {echo "selected";} ?>>No</option>
+                  </select>
+                  </p>
+                </div>
+              </div>
+              <?php //////////////////////////////////////////////////////////////////// ?>
             </div>
           </div>
           <p>

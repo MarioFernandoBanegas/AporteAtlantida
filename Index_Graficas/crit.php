@@ -173,12 +173,11 @@
     }
 
     public function top_20( $conn, $cual ) {
-      $sql = "SELECT count(*) as conteo,a.IP from vulnera a
-      inner join SERVIDORES b on a.ip = b.IP_SERVIDOR
-      inner join CAT_HOSTS c ON b.ID_HOST = c.ID_HOST
-      inner join CAT_CLUSTER d ON  c.ID_CLUSTER = d.ID_CLUSTER
-      inner join CAT_SERVICIOS g ON b.ID_SERVICIO = g.ID_SERVICIO
-      where g.CRITICO = 1 and d.nom_cluster like '%" . $cual . "%'
+      $sql = "SELECT count(*) as conteo, a.ip FROM vulnera a
+        inner join SERVIDORES b on a.ip = b.IP_SERVIDOR
+        inner join CAT_HOSTS c ON b.ID_HOST = c.ID_HOST
+        inner join CAT_CLUSTER d ON  c.ID_CLUSTER = d.ID_CLUSTER
+        where d.nom_cluster like '%" . $cual . "%'
         GROUP  BY a.ip
         ORDER BY conteo desc" ;
       $query = sqlsrv_query( $conn, $sql ) ;
@@ -227,8 +226,8 @@
   if ( !$top20PRD === false ) {
     for ( $i = 0; $i < 20; $i++) {
       $row = sqlsrv_fetch_array( $top20PRD );
-      $top1[$i]=['conteo'];
-      $top2[$i]=['IP'];
+      $top1[$i] = $row[0] ;
+      $top2[$i] = $row[1] ;
     }
   }
 ?>
@@ -376,7 +375,7 @@
         <div class="col-lg-6">
           <div class="card mb-3">
             <div class="card-header">
-              <h6>Top 15 servidores vulnerables</h6>
+              <h6>Top 20 servidores vulnerables</h6>
             </div>
             <div class="card-body">
                 <canvas id="Top20Servers" width="50" height="50"></canvas>
@@ -758,34 +757,66 @@
           data: {
               labels: [
                 <?php
-                  for ( $i = 0; $i < 15; $i++) {
+                  for ( $i = 0; $i < 19; $i++) {
                     echo "'" . $top2[$i] . "', " ;
                   }
                 ?>
               ],
               datasets: [{
-                  label: 'No. Vulnerabilidades',
+                  label: '',
                   data: [
                     <?php
-                      for ( $i = 0; $i < 15; $i++) {
+                      for ( $i = 0; $i < 19; $i++) {
                         echo "'" . $top1[$i] . "', " ;
                       }
                     ?>
                   ],
                   backgroundColor: [
-                      'rgba(115, 249, 119, 0.2)',
-                      'rgba(115, 249, 119, 0.2)',
-                      'rgba(233, 233, 48, 0.2)',
-                      'rgba(255, 99, 132, 0.2)',
-                      'rgba(255, 99, 132, 0.2)'
+                      'rgba(255, 0,4, 1)',
+                      'rgba(255, 0,4, 1)',
+                      'rgba(255, 0,4, 1)',
+                      'rgba(255, 0,4, 1)',
+                      'rgba(243, 255, 0, 1)',
+                      'rgba(243, 255, 0, 1)',
+                      'rgba(243, 255, 0, 1)',
+                      'rgba(243, 255, 0, 1)',
+                      'rgba(243, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)'
+
+
+
+
 
                   ],
                   borderColor: [
-                      'rgba(115, 249, 119, 1)',
-                      'rgba(115, 249, 119, 1)',
-                      'rgba(233, 233, 48, 1)',
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(255, 99, 132, 1)'
+                      'rgba(255, 0,4, 1)',
+                      'rgba(255, 0,4, 1)',
+                      'rgba(255, 0,4, 1)',
+                      'rgba(255, 0,4, 1)',
+                      'rgba(243, 255, 0, 1)',
+                      'rgba(243, 255, 0, 1)',
+                      'rgba(243, 255, 0, 1)',
+                      'rgba(243, 255, 0, 1)',
+                      'rgba(243, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)',
+                      'rgba(15, 255, 0, 1)'
 
                   ],
                   borderWidth: 1
@@ -802,6 +833,7 @@
           }
       });
     </script>
+
 
 
   </div>

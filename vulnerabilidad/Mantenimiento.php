@@ -1,8 +1,8 @@
-<?php 
-	include("../libs/connection.php") ;
-	include("headers.php");
+<?php
+	include("../Conexion/conexion.php") ;
+	include "../DiseñoGraficasIndex.php";
 	date_default_timezone_set("America/Tegucigalpa");
-	
+
 	//<!-- FORMULARIO PARA ESTE EJERCICIO -->
 
 	//<!-- PROCESO DE CARGA Y PROCESAMIENTO DEL EXCEL-->
@@ -24,19 +24,19 @@
 		if ( copy($_FILES['excel']['tmp_name'], $destino) ) echo "Archivo Cargado Con Éxito";
 		else echo "Error Al Cargar el Archivo";
 
-	if (file_exists ("cop_".$archivo)){ 
+	if (file_exists ("cop_".$archivo)){
 		/** Llamamos las clases necesarias PHPEcel */
 		require('../Classes/PHPExcel.php');
 		require_once('../Classes/PHPExcel/IOFactory.php');
-		require('../Classes/PHPExcel/Reader/Excel2007.php');					
+		require('../Classes/PHPExcel/Reader/Excel2007.php');
 	// Cargando la hoja de excel
 		$objReader = new PHPExcel_Reader_Excel2007();
 		$objPHPExcel = $objReader->load("cop_".$archivo);
-		$objFecha = new PHPExcel_Shared_Date();       
+		$objFecha = new PHPExcel_Shared_Date();
 	// Asignamon la hoja de excel activa
 		$objPHPExcel->setActiveSheetIndex(0);
 
-	// Importante - conexión con la base de datos 
+	// Importante - conexión con la base de datos
 
 	// Rellenamos el arreglo con los datos  del archivo xlsx que ha sido subido
 
@@ -67,20 +67,20 @@
 
 
 			$_DATOS_EXCEL[$i]['activo'] = 1;
-		}		
+		}
 		$errores=0;
 
 
 		foreach($_DATOS_EXCEL as $campo => $valor){
-			$sql = "INSERT INTO vulnera  (IP,Servidor,EstadoRiesgo,SeveridadRiesgo,Protocolo,Puerto,Responsable,AreaResponsable,TipoAmenaza,Solucion,Descripcion,PlanAccion,Evidencias,Observaciones,FechaEstimadaCierre,FechaEstimadaCierreProyecto,NumeroProyecto,activo)  VALUES ('";
+			$sql = "INSERT INTO vulnera  (IP,Servidor,EstadoRiesgo,SeveridadRiesgo,Protocolo,Puerto,Responsable,AreaResponsable,TipoAmenaza,Solucion,Descripcion,PlanAccion,Evidencias,Observaciones,FechaEstimadaCierre,FechaEstimadaCierreProyecto,NumeroProyecto,activo)
+			VALUES ('')";
 			foreach ($valor as $campo2 => $valor2){
-				$campo2 == "activo" ? $sql.= $valor2."');" : $sql.= $valor2."','";
-			}
+				$campo2 == "activo" ? $sql.= $valor2."');'" : $sql.= $valor2."','";}
 
 			$result = sqlsrv_query($conn,$sql);
 			if (!$result){ echo "Error al insertar registro ".$campo;$errores+=1;}
-		}	
-						/////////////////////////////////////////////////////////////////////////	
+		}
+
 		echo "<hr> <div class='col-xs-12'>
 		<div class='form-group'>";
 		echo "<strong><center>ARCHIVO IMPORTADO CON EXITO, EN TOTAL $campo REGISTROS Y $errores ERRORES</center></strong>";
@@ -90,13 +90,13 @@
 		unlink($destino);
 
 	}
-						//si por algun motivo no cargo el archivo cop_ 
+						//si por algun motivo no cargo el archivo cop_
 	else{
 		echo "Primero debes cargar el archivo con extencion .xlsx";
 	}
 	}
 ?>
-<?php 
+<?php
 if (isset($action)) {
 	$filas = $objPHPExcel->setActiveSheetIndex(0)->getHighestRow();
 }

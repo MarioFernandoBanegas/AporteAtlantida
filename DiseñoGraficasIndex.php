@@ -1,4 +1,4 @@
-<?php require 'libs/connection.php' ?>
+<?php require '../Conexion/conexion.php' ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,6 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Admin-ServersParch</title>
+  <link rel="stylesheet" href="../css/styles.css" >
   <!-- Bootstrap core CSS-->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -60,9 +61,9 @@
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li><a href="../server/traer1.php">Cargar de Catálogos</a></li>
             <li><a href="../server/traer2.php">Cargar de Virtual Machines</a></li>
-            <li><a href="../server/traer3.php">Cargar de Cylance</a></li>
-            <li><a href="../server/serve.php?accion=insert">Registrar Servidor</a></li>
-            <li><a href="../ListaServidores.php">Listar Servidores</a></li>
+            <li><a href="../server/cylance.php">Cargar de Cylance</a></li>
+            <li><a href="../administracion/Servidores/serve.php?accion=insert">Registrar Servidor</a></li>
+            <li><a href="../administracion/Servidores/ListaServidores.php">Listar Servidores</a></li>
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Seguridad">
@@ -72,7 +73,7 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li><a href="../vulnerabilidad/Mantenimiento.php">Importar Vulnerabilidades</a></li>
-            <li><a href="../server/ListavUl.php">Listar vulnerabilidades</a></li>
+            <li><a href="../vulnerabilidad/ListavUl.php">Listar vulnerabilidades</a></li>
           </ul>
         </li>
         <li  style="overflow:auto;color:black;" class="nav-item" data-toggle="tooltip" data-placement="right" title="Administracion">

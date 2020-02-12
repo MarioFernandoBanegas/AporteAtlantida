@@ -10,11 +10,11 @@
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="../index.php">Tablero</a>
+          <a href="../../index.php">Tablero</a>
         </li>
         <li class="breadcrumb-item active">Mi Tablero</li>
         <li class="breadcrumb-item">
-      <a href="../Reportes/reporteresponsables.php" target="_blank">Imprimir</a></li>
+      <a href="../../Reportes/reportecluster.php" target="_blank">Imprimir</a></li>
       </ol>
       <!-- Icon Cards-->
 
@@ -80,7 +80,7 @@
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>Copyright©|BACCredomatic|2019</small>
+          <small>Copyright© | Infatlán | 2020</small>
         </div>
       </div>
     </footer>

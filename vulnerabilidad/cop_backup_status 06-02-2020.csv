@@ -1,0 +1,559 @@
+VM Name,Status,Last Backup End,Backup Duration,Backup Currency,Last Node Replication End
+"a13srvrhpl.ADBancat.hn,success,""February 4, 2020 9:28:23 AM CST"",390,187249,"
+"Aba Trns w2012r2-restore 12-09,success,""February 4, 2020 7:18:24 AM CST"",276,195048,"
+"Aba web w2012r2,success,""February 4, 2020 7:03:39 PM CST"",127,152733,"
+"ABATTAPPP,success,""February 5, 2020 5:25:59 AM CST"",,115393,"
+"ABATTDBP,success,""February 4, 2020 8:01:22 PM CST"",2518,149270,"
+"ABATTTMSP,aged,""December 21, 2019 11:20:21 AM CST"",961,3982131,"
+ABATTWEBP,missing,,,,
+"ACF QFlow DB,success,""February 4, 2020 9:36:38 AM CST"",947,186754,"
+ACF Qflow Pantallas,missing,,,,
+"ACF Qflow Reportes,success,""February 4, 2020 9:12:57 AM CST"",222,188175,"
+"ACF QFlow Reportes 2018,aged,""November 24, 2019 9:12:15 AM CST"",,6236217,"
+"ACF Qflow SMS,success,""February 4, 2020 9:12:01 AM CST"",175,188231,"
+"ACF Qflow Web01,success,""February 4, 2020 9:17:50 AM CST"",310,187882,"
+"ACF Qflow Web02,success,""February 4, 2020 9:21:20 AM CST"",430,187672,"
+"ACF Qflow Web03,success,""February 4, 2020 10:26:55 AM CST"",4358,183737,"
+"ACH PayExpedite,success,""February 6, 2020 1:33:15 AM CST"",908,42957,"
+"ActEventApp,success,""February 1, 2020 9:07:32 PM CST"",302,404500,"
+"ActEventConsult,success,""February 4, 2020 9:16:51 AM CST"",217,187941,"
+"ActivosEvntOnline,success,""February 4, 2020 9:07:08 PM CST"",266,145324,"
+"Actualizacion Clientes Beanario,success,""February 4, 2020 9:05:21 PM CST"",244,145431,"
+"AD-VPN-TOKENS-TST- BORRAR EN JUNIO,success,""February 4, 2020 9:01:18 PM CST"",22,145674,"
+"ADBancat WSUS,success,""February 3, 2020 5:14:30 AM CST"",,288882,"
+"AdmonSis Project+Visio,success,""February 6, 2020 6:41:04 AM CST"",5301,24488,"
+"AFP Atlantida Monitor,deleted,""July 24, 2019 6:33:48 AM CST"",1871,16700124,"
+"Altus,success,""February 4, 2020 11:02:50 AM CST"",115,181582,"
+"AMDC CONEXION,success,""February 5, 2020 5:22:12 AM CST"",599,115620,"
+"AOL Dashboard,success,""February 6, 2020 11:04:41 AM CST"",209,8671,"
+"AOL-avirtual1,success,""February 6, 2020 1:03:24 PM CST"",139,1548,"
+"AOL-Avirtual2,success,""February 6, 2020 1:06:59 PM CST"",133,1333,"
+"AOL-Avirtual2 QAS,success,""February 6, 2020 1:04:07 PM CST"",175,1505,"
+"AOL-Avirtual3,success,""February 6, 2020 1:04:53 PM CST"",220,1459,"
+"AOL-Avirtual3 QAS,success,""February 6, 2020 1:04:08 AM CST"",182,44704,"
+"AOL-Avirtual4,deleted,""November 22, 2019 1:01:03 PM CST"",18,6395289,"
+"AOL-Avirtual6,success,""February 6, 2020 1:04:25 PM CST"",206,1487,"
+"AOL-CajaEmpres,success,""February 6, 2020 1:06:16 PM CST"",244,1376,"
+"AOL-Transaccional Empresas 6,success,""February 6, 2020 1:07:46 PM CST"",147,1286,"
+"AOL-Transaccional Personas (60.227),deleted,""December 18, 2019 5:01:18 PM CST"",20,4220874,"
+"Aplicaciones Internas -  60.85,success,""February 2, 2020 5:39:38 AM CST"",,373774,"
+"Aplicaciones Internas 60.150,success,""February 4, 2020 9:19:37 PM CST"",1010,144575,"
+"Aplicaciones Internas PCI,success,""February 4, 2020 9:15:40 PM CST"",833,144812,"
+"Aplicaciones Internas PrePRD,success,""February 5, 2020 9:21:44 AM CST"",638,101248,"
+"Aplicaciones Java PRD,success,""February 4, 2020 11:04:57 AM CST"",163,181455,"
+"APP Administrativas Int,aged,""January 28, 2020 11:07:35 AM CST"",241,786097,"
+"ASTERISK,success,""February 3, 2020 5:30:00 AM CST"",,287952,"
+Atlantida MonitorQAS_APP,missing,,,,
+"ATM Full XDA PROD,success,""February 6, 2020 1:08:09 AM CST"",278,44463,"
+"AUDITORIA BASA,success,""February 4, 2020 11:10:49 PM CST"",251,137903,"
+"Auditoria Carpetas Compartidas,success,""February 4, 2020 11:10:11 PM CST"",242,137941,"
+"AutomateEnterprise,deleted,""December 16, 2019 5:00:56 AM CST"",17,4436896,"
+AutomateEnterprise - Borrar febrero 2020,missing,,,,
+BACKUP-VERSIONES Borrar Agosto 2019,missing,,,,
+"Bancatlan.sv,success,""February 4, 2020 7:16:53 AM CST"",180,195139,"
+"Bancoatlantida.com.ni,success,""February 6, 2020 5:45:07 AM CST"",1944,27845,"
+"Beanario Activos,success,""February 2, 2020 5:02:29 PM CST"",89,332803,"
+"Beanario Actualizacion,success,""February 2, 2020 5:05:24 PM CST"",96,332628,"
+"Beanario Convenios,success,""February 2, 2020 5:02:35 PM CST"",97,332797,"
+"Beanario Convenios- DEV,success,""February 4, 2020 11:07:29 PM CST"",97,138103,"
+"Beanario Huacas,success,""February 2, 2020 5:03:24 PM CST"",139,332748,"
+"Beanario Incidentes,success,""February 2, 2020 5:05:16 PM CST"",242,332636,"
+"Biometrico  BASA,success,""February 4, 2020 11:05:01 AM CST"",214,181451,"
+"Bitnami ProcessMaker,success,""February 3, 2020 5:14:05 AM CST"",,288907,"
+"Bitnami ProcessMaker-App,success,""February 2, 2020 5:02:13 PM CST"",66,332819,"
+"Bitnami ProcessMaker-DB,success,""February 2, 2020 5:03:42 PM CST"",49,332730,"
+"Bolsa de Trabajo - BackEnd,aged,""January 22, 2020 11:00:16 AM CST"",6306,1304936,"
+"Bolsa de Trabajo - FrontEnd,success,""February 2, 2020 5:09:30 PM CST"",386,332382,"
+"Caja Empresarial APP,success,""February 5, 2020 11:25:09 PM CST"",183,50643,"
+"Caja Empresarial WebServices,aged,""January 21, 2020 5:11:22 AM CST"",,1412270,"
+"Cerberus,aged,""October 19, 2019 11:18:30 AM CST"",,9339042,"
+"Cerberus Comunicaciones,success,""February 4, 2020 11:16:00 AM CST"",827,180792,"
+"Cisco_Firepower_Management_Center,success,""February 4, 2020 1:12:40 PM CST"",678,173792,"
+"Cisco_Firepower_Management_Center_2018,success,""February 4, 2020 1:14:35 PM CST"",794,173677,"
+"Cisco_Firepower_Management_Center_HND_2018,success,""February 5, 2020 7:35:58 AM CST"",717,107594,"
+"ClearingMC2,deleted,""December 16, 2019 5:03:41 AM CST"",126,4436731,"
+ClearingMC2 Antes de Borrar confirmar con Francisco Alonzo,missing,,,,
+"Compensacion E. APP,success,""February 4, 2020 5:09:11 AM CST"",,202801,"
+"Compensacion E. BD,success,""February 5, 2020 11:24:48 PM CST"",206,50664,"
+"Consulta Boletos,success,""February 4, 2020 1:08:48 PM CST"",442,174024,"
+"Contabilidad Infatlan,success,""February 3, 2020 5:25:38 AM CST"",,288214,"
+"Content Security Reporter CSR  PREPRD,success,""February 5, 2020 7:27:04 AM CST"",734,108128,"
+"Control-IT_GTW_Template,success,""February 6, 2020 1:43:29 AM CST"",79,42343,"
+"ConveniosDB,success,""February 4, 2020 1:04:18 PM CST"",213,174294,"
+"CotizadorMovilProduccion,success,""February 4, 2020 1:11:40 PM CST"",167,173852,"
+"CreditScoring 2012,success,""February 4, 2020 11:19:39 PM CST"",763,137373,"
+"CRM 2019,success,""February 5, 2020 8:23:39 AM CST"",3811,104733,"
+"CRM PRD V2,aged,""January 25, 2020 12:31:25 PM CST"",,1040267,"
+"CTI_Telesoft,success,""February 4, 2020 1:07:10 PM CST"",375,174122,"
+"CylanceHYBRID_1.4.0.2,success,""February 4, 2020 1:08:12 PM CST"",425,174060,"
+"Dashboard Cumplimiento,success,""February 5, 2020 11:25:20 PM CST"",186,50632,"
+"Data Collector,success,""February 5, 2020 9:08:52 AM CST"",27,102020,"
+"Desktop Central,success,""February 5, 2020 9:21:18 AM CST"",727,101274,"
+"Device42-15.00.00,success,""February 4, 2020 11:08:40 PM CST"",165,138032,"
+"DHCP,success,""February 2, 2020 5:08:01 PM CST"",231,332471,"
+"Dido Applicacion 2012,success,""February 4, 2020 7:45:11 AM CST"",1502,193441,"
+"DIDO DB 2008,success,""February 4, 2020 9:39:43 AM CST"",806,186569,"
+"Diebold EDC,success,""February 4, 2020 9:10:03 PM CST"",430,145149,"
+"DIPS-11g,success,""February 6, 2020 5:46:06 AM CST"",1816,27786,"
+"Disclosure Management APP,success,""February 2, 2020 5:06:26 PM CST"",233,332566,"
+"Disclosure Management DB,success,""February 2, 2020 5:13:42 PM CST"",459,332130,"
+"DNS1,success,""February 5, 2020 7:23:43 AM CST"",259,108329,"
+"DNS2,success,""February 5, 2020 7:18:23 AM CST"",259,108649,"
+"Docuware,success,""February 6, 2020 7:15:31 AM CST"",629,22421,"
+Docuware Centro-Sur 2019,missing,,,,
+"Docuware SPS,success,""February 3, 2020 12:27:15 AM CST"",179,306117,"
+"Docuware-La Ceiba,success,""February 6, 2020 7:23:23 AM CST"",383,21949,"
+"DSITV-Pro,success,""February 4, 2020 1:07:36 PM CST"",407,174096,"
+"e-IBS_Imagenes_FTP,success,""February 4, 2020 5:07:57 PM CST"",241,159675,"
+"EDIT PACKAGE,success,""February 4, 2020 11:14:10 PM CST"",177,137702,"
+EDIT PACKAGE 2020,missing,,,,
+"EDP_Authorizer,success,""February 4, 2020 7:23:58 AM CST"",151,194714,"
+"EDP_Card,success,""February 4, 2020 7:23:12 AM CST"",171,194760,"
+"EDP_Clearing,success,""February 4, 2020 7:19:20 AM CST"",311,194992,"
+"EDP_Communicator,success,""February 5, 2020 9:16:08 AM CST"",268,101584,"
+"EDP_Reporter,success,""February 4, 2020 1:12:18 PM CST"",153,173814,"
+"EDP_VNC,success,""February 5, 2020 9:17:44 AM CST"",165,101488,"
+"EDP_vPOS,success,""February 4, 2020 7:22:53 AM CST"",193,194779,"
+"EIBS-INFA,success,""February 4, 2020 5:05:06 PM CST"",237,159846,"
+eIBS-SRVEIBS,missing,,,,
+"eIBS-SRVEIBS-CNT,success,""February 4, 2020 9:08:59 PM CST"",399,145213,"
+"eIBSFiduciario-App Clientix,success,""February 6, 2020 7:08:56 AM CST"",480,22816,"
+"eIBSFiduciario-DB,success,""February 5, 2020 11:24:25 PM CST"",200,50687,"
+"Entrust Produccion 2018,success,""February 4, 2020 9:10:29 PM CST"",503,145123,"
+"EPO_McAfee,success,""February 6, 2020 5:14:29 AM CST"",559,29683,"
+"EPO_McAfee_APP_2018,aged,""November 11, 2019 5:36:38 AM CST"",,7372354,"
+"EPO_McAfee_DB_2018,aged,""January 9, 2020 3:31:30 AM CST"",8480,2455062,"
+"EPOv59NICPRD,success,""February 4, 2020 11:21:49 PM CST"",854,137243,"
+"Exception File block,success,""February 5, 2020 7:21:32 AM CST"",392,108460,"
+"ExchangeCNT,success,""February 5, 2020 7:35:02 AM CST"",562,107650,"
+"ExchangePRD-A,success,""February 2, 2020 6:27:28 PM CST"",5024,327704,"
+"ExchangePRD-B,success,""February 2, 2020 5:40:41 PM CST"",2288,330511,"
+"ExchangeSMTP,aged,""December 25, 2019 6:30:07 AM CST"",406,3653945,"
+"ExchangeSMTPNIC,success,""February 5, 2020 9:12:28 AM CST"",202,101804,"
+"FENIX,success,""February 6, 2020 1:17:40 AM CST"",393,43892,"
+"Fiduciario,success,""February 5, 2020 9:14:18 AM CST"",272,101694,"
+"Fiduciario-SIE,success,""February 4, 2020 1:10:35 PM CST"",539,173917,"
+"File Server,success,""February 4, 2020 1:14:51 PM CST"",324,173661,"
+"Financial Service HANA PRD,success,""February 4, 2020 10:02:54 AM CST"",3226,185178,"
+"FMC_PCI_2018,success,""February 5, 2020 7:33:33 AM CST"",487,107739,"
+"FMC_SWIFT_2018,success,""February 5, 2020 9:13:58 AM CST"",325,101714,"
+"FrontEndIncidentesDEV,success,""February 4, 2020 5:02:18 PM CST"",76,160014,"
+"Grada,success,""February 4, 2020 5:38:45 PM CST"",2000,157827,"
+"HN_PRD_GRABACIONLLAMADAS_APP,success,""February 2, 2020 7:22:23 PM CST"",263,324409,"
+"HN_PRD_KANBOARD_APP,success,""February 6, 2020 5:41:36 AM CST"",2140,28056,"
+HNDESFILESERVERTI_APP,missing,,,,
+HNDEVEVCOM_01,missing,,,,
+HNDEVEVCOM_02,missing,,,,
+HNHSTSWIFTAA,missing,,,,
+"HNPRAD001,success,""February 4, 2020 5:06:41 PM CST"",309,159751,"
+HNPRADSWIFT_APP1,missing,,,,
+HNPRDABA_WEB,missing,,,,
+HNPRDABAMODADMIN,missing,,,,
+HNPRDABAPROC,missing,,,,
+"HNPRDABAPRTG_APP,success,""February 2, 2020 11:18:32 AM CST"",408,353440,"
+"HNPRDABAREPLICATION_DB,success,""February 4, 2020 11:15:34 PM CST"",314,137618,"
+HNPRDACHHIST_DB,missing,,,,
+HNPRDAD002_APP,missing,,,,
+HNPRDAD003_APP,missing,,,,
+HNPRDADSWIFT_APP2,missing,,,,
+HNPRDAHDMZ_APP,missing,,,,
+HNPRDAMARPRE,missing,,,,
+HNPRDAPP1ONBOARDING,missing,,,,
+HNPRDAPP2ONBOARDING,missing,,,,
+HNPRDARCHIVING_APP,missing,,,,
+"HNPRDASSESSMENT_APP,success,""February 4, 2020 11:06:23 PM CST"",24,138169,"
+HNPRDB2BNODE1_APP,missing,,,,
+HNPRDB2BNODE2_APP,missing,,,,
+HNPRDBDHISTORIA_DB,missing,,,,
+HNPRDBDINFA_DB,missing,,,,
+HNPRDBDMOTOREMP_DB,missing,,,,
+HNPRDBKDKMS,missing,,,,
+"HNPRDCiscoFirepower_APP,success,""February 4, 2020 11:22:59 PM CST"",719,137173,"
+HNPRDCTRLMEM1_APP,missing,,,,
+HNPRDCTRLMEM2_APP,missing,,,,
+HNPRDCTRLMS1_APP,missing,,,,
+HNPRDCTRLMS2_APP,missing,,,,
+HNPRDCTRLMSQL1_DB,missing,,,,
+HNPRDCTRLMSQL2_DB,missing,,,,
+HNPRDCTRLMSS_APP,missing,,,,
+HNPRDDATASERVICES_APP,missing,,,,
+HNPRDDHCPSAP_APP,missing,,,,
+"HNPRDDWH_DB,success,""February 5, 2020 11:10:08 PM CST"",498,51544,"
+HNPRDDYTACTIVE,missing,,,,
+HNPRDDYTCLUSTER,missing,,,,
+HNPRDEMP_DB,missing,,,,
+HNPRDEMPPER_WEB,missing,,,,
+HNPRDEMPPY_WEB,missing,,,,
+HNPRDEVCOM_01,missing,,,,
+HNPRDEVCOM_02,missing,,,,
+HNPRDFILESRVQAS_APP,missing,,,,
+HNPRDILMNODE1_APP,missing,,,,
+HNPRDINFA_WEB,missing,,,,
+HNPRDKIWI_APP,missing,,,,
+HNPRDMDL_DB,missing,,,,
+HNPRDMGTC_APP,missing,,,,
+HNPRDNC-APP,missing,,,,
+HNPRDOCBAP1,missing,,,,
+HNPRDOCBAP2,missing,,,,
+HNPRDOCBAP3,missing,,,,
+HNPRDOCBBC1,missing,,,,
+HNPRDOCBBC2,missing,,,,
+HNPRDOCBBD,missing,,,,
+HNPRDOCBCB1,missing,,,,
+HNPRDOCBCB2,missing,,,,
+HNPRDOCBCB3,missing,,,,
+HNPRDOCBCB4,missing,,,,
+HNPRDOCBTRNS01,missing,,,,
+HNPRDOCBTRNS02,missing,,,,
+HNPRDONBOARDING_APP,missing,,,,
+HNPRDPGOCOM,missing,,,,
+HNPRDPOSUICTMS,missing,,,,
+HNPRDPOWER_APP,missing,,,,
+HNPRDPROCINFA_APP,missing,,,,
+HNPRDPWCNODE1_APP,missing,,,,
+HNPRDPWCNODE2_APP,missing,,,,
+HNPRDREMESAS_APP,missing,,,,
+HNPRDSAMCOMPLIANCE_APP,missing,,,,
+HNPRDSAPDSSIG,missing,,,,
+HNPRDSCCM_APP,missing,,,,
+HNPRDSCCM_DB,missing,,,,
+HNPRDSLDOCC,missing,,,,
+HNPRDSLDOCC_APP,missing,,,,
+HNPRDSORTR-APP,missing,,,,
+HNPRDSSRS_SQL,missing,,,,
+HNPRDSVRCUMPLIMIENTODB,missing,,,,
+HNPRDSWAPP (Template) (duplicate),missing,,,,
+HNPRDSWAPP (duplicate),missing,,,,
+HNPRDSWDB,missing,,,,
+HNPRDSWFTAWP,missing,,,,
+"HNPRDSWNTA,success,""February 4, 2020 5:07:46 PM CST"",386,159686,"
+"HNPRDSWSQL,success,""February 2, 2020 11:18:23 AM CST"",158,353449,"
+HNPRDSYSAID_APP,missing,,,,
+"HNPRDSYSLOGSCYLANCE_APP,success,""February 2, 2020 11:17:26 AM CST"",354,353506,"
+HNPRDTASKDBA,missing,,,,
+HNPRDTGR_APP,missing,,,,
+HNPRDTRNSPYME,missing,,,,
+HNPRDTRSPER_APP,missing,,,,
+HNPRDVEEMPROXY,missing,,,,
+HNPRDWSUS,missing,,,,
+HNPRDWTSCXN,missing,,,,
+HNPREPRDABA_DB,missing,,,,
+HNPREPRDABA_TM,missing,,,,
+HNPREPRDABA_TNS,missing,,,,
+HNPREPRDABA_WEB,missing,,,,
+HNPREPRDAPP1ONBOARDING,missing,,,,
+HNQASCCIT_APP,missing,,,,
+HNQASEMP_DB1,missing,,,,
+HNQASEMP_DB2,missing,,,,
+HNQASSYSAID-APP,missing,,,,
+IBM DB2 CON,missing,,,,
+IBM DB2 PRD,missing,,,,
+"IBM HTTP,success,""February 5, 2020 11:07:53 PM CST"",337,51679,"
+"IBM WAS CON,success,""February 5, 2020 11:05:53 PM CST"",243,51799,"
+"IBM WAS PRD,success,""February 5, 2020 11:07:11 PM CST"",312,51721,"
+"ICS,success,""February 2, 2020 7:25:07 PM CST"",159,324245,"
+"IMG SOPORTE ATMS KIOSKOS,success,""February 5, 2020 7:04:34 AM CST"",,109478,"
+"IntelliView,success,""February 4, 2020 5:05:39 PM CST"",284,159813,"
+"IntelliView-Meganac,success,""February 4, 2020 5:02:54 PM CST"",111,159978,"
+"IntermediateCA,success,""February 2, 2020 11:14:56 AM CST"",214,353656,"
+Intranet - clone -21-08-2019,missing,,,,
+"Intranet-Restore2016,success,""February 4, 2020 7:15:18 AM CST"",109,195234,"
+"IPS,deleted,""January 15, 2020 11:09:27 PM CST"",454,1865985,"
+IPS BORRAR MARZO 2020,missing,,,,
+"Jsign Ahorros 60.146,success,""February 6, 2020 1:08:09 AM CST"",116,44463,"
+"Jsign Tegucigalpa,success,""February 6, 2020 9:05:05 AM CST"",225,15847,"
+"Jtar-PREPRD,success,""February 2, 2020 7:24:13 PM CST"",355,324299,"
+"JTAR1-01,success,""February 6, 2020 1:05:34 AM CST"",282,44618,"
+"JTAR1-02,success,""February 6, 2020 1:06:37 AM CST"",263,44555,"
+"JTAR2-01,success,""February 6, 2020 6:33:01 AM CST"",2738,24971,"
+"JTAR2-02,success,""February 6, 2020 6:36:15 AM CST"",310,24777,"
+"JTAR3-01,success,""February 6, 2020 6:34:42 AM CST"",2141,24870,"
+"JTAR3-02,success,""February 6, 2020 6:41:32 AM CST"",659,24460,"
+Jteller APP Lab1,missing,,,,
+"Jteller DB,success,""February 4, 2020 6:40:10 AM CST"",3205,197342,"
+Jteller DB 13-11-2019-Auditoria,missing,,,,
+"Jteller DB clon 10-04-2019,deleted,""September 1, 2019 7:28:47 PM CST"",129,13370425,"
+Jteller DB QA,missing,,,,
+"Jteller DB-Lab1,success,""February 5, 2020 7:24:56 AM CST"",617,108256,"
+"Jteller DB01 - Historico,success,""February 2, 2020 11:24:01 AM CST"",254,353111,"
+"JTELLER LOFISA,deleted,""September 22, 2019 9:10:23 PM CST"",,11549929,"
+JTELLER LOFISA (no Borrar),missing,,,,
+Jteller Lofisa -13-11-2019-Auditoria,missing,,,,
+"Jteller LOFISA 2019,success,""February 4, 2020 9:09:26 PM CST"",485,145186,"
+"Jteller Lofisa-Auditoria,deleted,""October 5, 2019 5:19:11 PM CST"",472,10440601,"
+JTeller-Lofisa-191008,missing,,,,
+"JtellerBalanceador,success,""February 6, 2020 1:11:22 AM CST"",179,44270,"
+"Kioscos Transaccional,success,""February 5, 2020 11:05:21 PM CST"",220,51831,"
+"KIOSKO Y ABA PRD,success,""February 2, 2020 7:25:27 PM CST"",143,324225,"
+"Laboratorio1,success,""February 2, 2020 7:20:07 PM CST"",157,324545,"
+"Laboratorio2,success,""February 2, 2020 7:21:09 PM CST"",215,324483,"
+"LBTR,success,""February 6, 2020 6:42:24 AM CST"",324,24408,"
+"Libro de Queja Digital Back Office,success,""February 2, 2020 7:21:25 PM CST"",225,324467,"
+"Libro de Queja Digital Front Office,success,""February 2, 2020 7:21:40 PM CST"",248,324452,"
+"Libro de Queja Digital QA,success,""February 2, 2020 7:22:37 PM CST"",295,324395,"
+"Liquidfiles,success,""February 5, 2020 11:06:35 PM CST"",334,51757,"
+"LogArithm,success,""February 5, 2020 7:31:06 AM CST"",476,107886,"
+"LogStorage,success,""February 3, 2020 5:19:52 AM CST"",,288560,"
+"MagicInfo,success,""February 2, 2020 7:28:41 PM CST"",315,324031,"
+"Mail Scanner,success,""February 2, 2020 7:17:37 PM CST"",14,324695,"
+"Market Place QA,success,""February 2, 2020 7:21:59 PM CST"",262,324433,"
+"MarketPlaceAtlantida,success,""February 5, 2020 1:02:21 AM CST"",87,131211,"
+"MCAFEE EPOv5,success,""February 3, 2020 5:33:28 AM CST"",,287744,"
+"Mcafee FW Profiler,success,""February 6, 2020 5:14:29 AM CST"",811,29683,"
+"McAfee Gateway,success,""February 2, 2020 9:08:23 PM CST"",354,318049,"
+"McAfee Gateway2,success,""February 2, 2020 9:18:09 PM CST"",790,317463,"
+"Micc 2012,success,""February 4, 2020 9:43:03 AM CST"",1995,186369,"
+Moneygram Clone (Template),missing,,,,
+"Moneygram Remesas 60.19,success,""February 6, 2020 9:04:24 AM CST"",169,15888,"
+MonitorDB_CLONE_replica,missing,,,,
+"Monitoreo ADBancat,success,""February 6, 2020 9:01:04 AM CST"",15,16088,"
+"Moodle,success,""February 4, 2020 5:03:33 PM CST"",79,159939,"
+"Moodle Infatlan,success,""February 6, 2020 5:15:49 AM CST"",856,29603,"
+"MS-KMS,success,""February 6, 2020 1:45:39 AM CST"",113,42213,"
+"Museo Virtual,success,""February 6, 2020 1:18:47 AM CST"",645,43825,"
+"MW-APP-01V2,success,""February 4, 2020 7:48:42 AM CST"",1876,193230,"
+"MW-APP-02V2,success,""February 4, 2020 7:27:09 AM CST"",780,194523,"
+"MW-DB-01V2,success,""February 4, 2020 5:25:44 PM CST"",1142,158608,"
+"MW-DB-02V2,success,""February 4, 2020 6:41:24 PM CST"",5921,154068,"
+"MW-MSG-01,success,""February 4, 2020 7:42:11 AM CST"",1359,193621,"
+"MW-MSG-02,success,""February 4, 2020 7:18:57 AM CST"",298,195015,"
+"MW-WEB-01,success,""February 5, 2020 1:02:00 AM CST"",24,131232,"
+"MW-WEB-02,success,""February 5, 2020 11:06:55 PM CST"",28,51737,"
+"MySQL Console,success,""February 5, 2020 6:33:38 AM CST"",,111334,"
+"Nessus Cylance Corporativo,success,""February 5, 2020 11:12:32 PM CST"",316,51400,"
+"Nessus Cylance DMZ,success,""February 5, 2020 11:06:53 PM CST"",344,51739,"
+"Nessus Cylance Network Monitor,success,""February 2, 2020 11:11:59 AM CST"",62,353833,"
+"Nessus Cylance PCI,success,""February 4, 2020 5:06:49 PM CST"",170,159743,"
+"Nessus Cylance Swiff,success,""February 4, 2020 5:04:07 PM CST"",190,159905,"
+"Nessus-Cylance,success,""February 4, 2020 5:02:07 PM CST"",67,160025,"
+"NEW Instrushield,deleted,""January 14, 2020 5:11:52 PM CST"",380,1973840,"
+NEW Instrushield BORRAR MARZO 2020,missing,,,,
+"NEW IPMONITOR,success,""February 5, 2020 7:21:57 AM CST"",457,108435,"
+"NEW-CERT-AUTH,success,""February 4, 2020 5:16:44 PM CST"",736,159148,"
+NIPRDENTRUST,missing,,,,
+"NIPRDPELOM_APP,success,""February 2, 2020 11:19:04 AM CST"",187,353408,"
+"NIPRDPELOM_DB,success,""February 5, 2020 11:05:09 PM CST"",228,51843,"
+"NIPRDPELOM_DMZ,aged,""October 20, 2019 11:13:43 AM CST"",,9252929,"
+"NOTES-SMTP,success,""February 6, 2020 1:43:19 AM CST"",124,42353,"
+"NTP Server,success,""February 6, 2020 1:45:02 AM CST"",81,42250,"
+"NTP Server 2,success,""February 6, 2020 1:47:38 AM CST"",134,42094,"
+"O365 Sincronizacion AD,success,""February 2, 2020 11:17:49 AM CST"",376,353483,"
+"OCB-PRD Transaccional,success,""February 6, 2020 9:08:13 AM CST"",376,15659,"
+"OCBBADMAPP1,success,""February 4, 2020 9:09:42 PM CST"",478,145170,"
+"OCBBADMAPP2,success,""February 4, 2020 5:03:44 PM CST"",110,159928,"
+"OCBBC1PREPRD,success,""February 5, 2020 7:18:36 AM CST"",276,108636,"
+"OCBCB1PREPRD,success,""February 2, 2020 11:22:26 AM CST"",184,353206,"
+"OCBCB2PREPRD,success,""February 5, 2020 7:30:27 AM CST"",246,107925,"
+"OCBDBAPPSRV,aged,""January 14, 2020 9:09:38 AM CST"",,2002774,"
+OCBDBAPPSRV Restore21Enero20,missing,,,,
+OCBDBSRV_PREPRD,missing,,,,
+"OCBRBAPPSRV1,success,""February 6, 2020 1:08:33 AM CST"",382,44439,"
+"OCBRBAPPSRV2,success,""February 4, 2020 5:11:56 PM CST"",573,159436,"
+"OCBRBAPPSRV3,success,""February 6, 2020 1:07:43 AM CST"",365,44489,"
+"OCBRBAPPSRV4,success,""February 4, 2020 9:10:15 PM CST"",502,145137,"
+"OCBWEBSRV1,success,""February 6, 2020 9:07:13 AM CST"",325,15719,"
+"OCBWEBSRV2,success,""February 6, 2020 9:07:48 AM CST"",355,15684,"
+"OCBWEBSRV3,success,""February 6, 2020 1:14:59 AM CST"",329,44053,"
+OCBWEBSRV4,missing,,,,
+"Office365-0,aged,""January 20, 2020 1:19:01 AM CST"",312,1512611,"
+"Office365-3,success,""February 6, 2020 1:45:19 AM CST"",189,42233,"
+"OP Archive Server 2018,success,""February 3, 2020 5:31:04 AM CST"",316,287888,"
+OP Archive Server 2018  RESTORES05Nov19,missing,,,,
+"OP Blazon 2018,success,""February 4, 2020 5:08:19 PM CST"",271,159653,"
+"OP Brava 2018,success,""February 2, 2020 9:18:17 PM CST"",919,317455,"
+"OP Frontend1,success,""February 2, 2020 11:34:06 AM CST"",1346,352506,"
+"OP Frontend2,success,""February 2, 2020 9:33:01 PM CST"",1298,316571,"
+OP Frontend3,missing,,,,
+"OP Prdcsbackend1,success,""February 3, 2020 5:28:12 AM CST"",,288060,"
+"OP Prdcsbackend2,success,""February 5, 2020 7:25:29 AM CST"",693,108223,"
+"OP Server Admin 2018,success,""February 5, 2020 8:25:22 AM CST"",,104630,"
+"OP Server DB 2018,success,""February 3, 2020 6:10:28 AM CST"",,285524,"
+"OPIncoming,success,""February 4, 2020 5:01:47 PM CST"",38,160045,"
+"OPIncomingBD,deleted,""November 12, 2019 5:06:51 PM CST"",295,7244541,"
+OPIncomingBD - Review en febrero 2020,missing,,,,
+"ORACLEVMMANAGER,success,""February 2, 2020 9:03:34 PM CST"",162,318338,"
+"Orion NTA Data Analisis 2012,success,""February 1, 2020 7:36:19 PM CST"",323,409973,"
+"Orion Solarwinds 2016,success,""February 5, 2020 9:33:58 AM CST"",988,100514,"
+"Orion Solarwinds DB,success,""February 5, 2020 9:17:19 AM CST"",308,101513,"
+"Orion Solawinds DPA,success,""February 2, 2020 11:25:10 AM CST"",803,353042,"
+"PARIS - PROD,success,""February 4, 2020 5:12:09 PM CST"",563,159423,"
+"PD12 Produccion,success,""February 5, 2020 1:12:39 AM CST"",,130593,"
+"Process Maker Infatlan,success,""February 2, 2020 9:01:08 PM CST"",18,318484,"
+"ProcessMaker,success,""February 5, 2020 9:09:25 AM CST"",73,101987,"
+"Protocolos y Conciliaciones DARA,success,""February 2, 2020 11:18:35 AM CST"",282,353437,"
+"Pruebas Cylance,success,""February 2, 2020 9:15:27 PM CST"",462,317625,"
+"QC-ALM,success,""February 5, 2020 1:07:01 AM CST"",315,130931,"
+"QC-ALM-USERS,success,""February 6, 2020 5:44:15 AM CST"",1950,27897,"
+"QC-BD,aged,""January 29, 2020 1:11:54 PM CST"",624,692238,"
+"QC-LOADGENERATOR,success,""February 6, 2020 1:45:28 AM CST"",219,42224,"
+"QC-LOADRUNNER,success,""February 2, 2020 9:05:55 PM CST"",269,318197,"
+"QualysGuard(R) Virtual Scanner Appliance,success,""February 1, 2020 7:32:57 PM CST"",181,410175,"
+"RedHatVirtWho,success,""February 2, 2020 9:14:33 PM CST"",473,317679,"
+"Remesa Intermex 60.187,success,""February 6, 2020 9:03:09 AM CST"",118,15963,"
+"Remesas FTP y Socket,success,""February 6, 2020 9:05:24 AM CST"",215,15828,"
+Remesas Web Services 7,missing,,,,
+Reportes ATMs,missing,,,,
+Reportes ITM,missing,,,,
+"Requerimiento de Sistemas APP,aged,""January 29, 2020 1:07:36 PM CST"",367,692496,"
+"Requerimiento de Sistemas DB,aged,""January 29, 2020 1:17:49 PM CST"",514,691883,"
+"REST _IVR,aged,""January 29, 2020 1:08:09 PM CST"",389,692463,"
+Restore CRM PRD V2,missing,,,,
+RESTORE EDITPACKAGE220120,missing,,,,
+"RESTORE EPO MCAFEE DB 2018,success,""February 6, 2020 1:51:48 AM CST"",578,41844,"
+RESTORE JTELLER LOFISA 2109,missing,,,,
+"Restore SOLMANPRD 12-05,success,""February 5, 2020 1:37:18 AM CST"",1310,129114,"
+"Risk_ASM,success,""February 2, 2020 9:13:41 PM CST"",602,317731,"
+"SAE,success,""February 1, 2020 7:55:42 PM CST"",1396,408810,"
+"SAM SERVER,success,""February 1, 2020 7:36:43 PM CST"",436,409949,"
+"SAP Business Objects BI 2008,success,""February 6, 2020 11:08:07 AM CST"",290,8465,"
+"SAP HANA OpenManage SupportAssist,success,""February 6, 2020 11:04:13 AM CST"",164,8699,"
+"SAP Replication,success,""February 4, 2020 9:10:28 AM CST"",107,188324,"
+"SAP TREX LNX PRD,success,""February 4, 2020 9:22:04 AM CST"",766,187628,"
+"SAP-CLOUD-CONNECTOR S4H,success,""February 5, 2020 9:12:45 AM CST"",231,101787,"
+"SAP-FIORI-LNX-PRD,success,""February 4, 2020 9:49:15 AM CST"",2307,185997,"
+"SAP-POWERDESIGNER,success,""February 6, 2020 6:35:39 AM CST"",227,24813,"
+"saphanabckprd,success,""February 3, 2020 2:43:29 AM CST"",,297943,"
+"SAPPIBASAPRD 3,success,""February 4, 2020 9:56:06 PM CST"",3156,142386,"
+SAPPOCOREPRD,missing,,,,
+"SAPPRTLPRDW12,success,""February 4, 2020 6:17:06 AM CST"",,198726,"
+"SAPWTSCXN,success,""February 6, 2020 5:47:50 AM CST"",52,27682,"
+"SEFIN,success,""February 6, 2020 11:05:46 AM CST"",264,8606,"
+"Sentinel,success,""February 6, 2020 11:06:57 AM CST"",316,8535,"
+Sentinel BD,missing,,,,
+"Servicios Multiples,success,""February 4, 2020 7:02:59 PM CST"",106,152773,"
+"ServidorAOLMonitor,success,""February 6, 2020 1:11:43 AM CST"",167,44249,"
+"SESC-Sistema Estadistico,success,""February 5, 2020 5:19:56 AM CST"",1013,115756,"
+siloco-prd,missing,,,,
+"Sistema de Notificaciones PRD,success,""January 29, 2020 9:09:13 PM CST"",383,663599,"
+"Sistema Transacciones Contables (Basa),success,""February 2, 2020 9:19:54 PM CST"",199,317358,"
+"SKMS PRD,success,""February 5, 2020 5:23:21 AM CST"",1218,115551,"
+"SmartCheck PRD BackOffice,success,""February 1, 2020 7:35:57 PM CST"",344,409995,"
+"SmartCheck PRD DB,aged,""January 29, 2020 1:12:10 PM CST"",615,692222,"
+"SmartCheck PRD WebService,aged,""January 29, 2020 5:11:53 AM CST"",,721039,"
+"SMS-SysAid,success,""February 6, 2020 1:55:49 AM CST"",817,41603,"
+Solarwind NTA Flow Collector,missing,,,,
+"Solarwinds SAM APP,aged,""January 29, 2020 1:18:29 PM CST"",999,691843,"
+"Solarwinds SAM DB,aged,""January 29, 2020 1:25:06 PM CST"",1357,691446,"
+"Soporte,success,""February 6, 2020 3:16:18 AM CST"",5446,36774,"
+"Soporte Prueba (Docuware),deleted,""November 25, 2019 5:09:59 AM CST"",353,6164353,"
+Soporte Prueba (Docuware) Borrar Febrero 2019,missing,,,,
+"SQL Normal,success,""February 2, 2020 9:13:05 PM CST"",611,317767,"
+SQL PCI,missing,,,,
+"SQL Terceros,aged,""January 26, 2020 9:45:11 AM CST"",,963841,"
+"SRM,success,""February 2, 2020 9:21:52 PM CST"",383,317240,"
+"SRV Aplicaciones Internas,aged,""October 13, 2019 5:09:35 AM CST"",,9879577,"
+"SRV Aplicaciones Internas-2,success,""February 2, 2020 5:46:04 AM CST"",,373388,"
+"SRV Aplicaciones Internas-3,success,""February 1, 2020 7:37:00 PM CST"",414,409932,"
+"Srv-aplicaciones 60.220,success,""February 5, 2020 6:33:30 AM CST"",5009,111342,"
+"srv-app-legal-PRD,success,""February 2, 2020 9:06:30 PM CST"",280,318162,"
+"SRV-MDM-PRD-W12,success,""February 1, 2020 7:30:38 PM CST"",47,410314,"
+srv_sybase_prd,missing,,,,
+"SRVPowerTech,success,""February 1, 2020 7:33:33 PM CST"",213,410139,"
+"SRVSAPFIMPROD,success,""February 5, 2020 5:37:27 AM CST"",,114705,"
+"SRVTAPPJava,success,""February 5, 2020 5:19:47 AM CST"",586,115765,"
+SVPRDACEVBD,missing,,,,
+SVPRDACEVWEB,missing,,,,
+Swiff_Historico,missing,,,,
+Swift - PRDNEW,missing,,,,
+"Swift-ACCESS-PRD,success,""February 6, 2020 11:01:50 AM CST"",43,8842,"
+"SYSAID-W2012,aged,""October 31, 2019 6:09:06 AM CST"",,8320806,"
+T-ACH PayExpedite (Template),missing,,,,
+T-AOL Dashboard (Template),missing,,,,
+T-AOL-avirtual1 (Template),missing,,,,
+T-AOL-Avirtual2 (Template),missing,,,,
+T-AOL-Avirtual3 (Template),missing,,,,
+T-AOL-Avirtual4 (Template),missing,,,,
+T-AOL-Avirtual6 (Template),missing,,,,
+T-AOL-CajaEmpres (Template),missing,,,,
+T-AOL-Transaccional Empresas 6 (Template),missing,,,,
+T-AOL-Transaccional Personas (60.227) (Template),missing,,,,
+T-Jsign Ahorros 60.146 (Template),missing,,,,
+T-Jsign Tegucigalpa (Template),missing,,,,
+T-JTELLER LOFISA (Template),missing,,,,
+T-JtellerBalanceador (Template),missing,,,,
+T-Mail_Scanner (Template),missing,,,,
+T-Micc 2012 (Template),missing,,,,
+T-Moneygram (Template),missing,,,,
+T-Moneygram Remesas (Template),missing,,,,
+T-Remesa Intermex 60.187 (Template),missing,,,,
+T-Remesas FTP y Socket (Template),missing,,,,
+T-Remesas Web Services 7 (Template),missing,,,,
+T-ServidorAOLMonitor (Template),missing,,,,
+T-ws1-60.170 (Template),missing,,,,
+T-ws2-60.171 (Template),missing,,,,
+T-ws3-60.172 (Template),missing,,,,
+Tableau18,missing,,,,
+"Tarjeta Debito Atlantida issuer,success,""February 4, 2020 7:56:48 AM CST"",1971,192744,"
+"TelesoftBD 2k8 PRD,success,""February 4, 2020 7:28:59 PM CST"",1244,151213,"
+"TelesoftWeb 2k8 PRD,success,""February 4, 2020 7:13:47 PM CST"",522,152125,"
+Template Control M (Template),missing,,,,
+Template Control M SQL (Template),missing,,,,
+Template Nessus-Cylance (Template),missing,,,,
+Template Siwft Active Directory 06Septiembre19 (Template),missing,,,,
+Template WIndows Server 2012 R2  20Sep2018 (Template),missing,,,,
+Template Windows Server 2016  13Noviembre19 (Template),missing,,,,
+Template Windows Server 2019  (02-Julio-2019) (Template),missing,,,,
+Template Windows Server 2019 + SQL Enterprise 2017 (02-Julio-2019) (Template),missing,,,,
+Template_Windows Server 2012 R2  14Marzo2019 (Template),missing,,,,
+"Term Master,deleted,""November 25, 2019 5:10:31 AM CST"",186,6164321,"
+Term Master - Review en febrero 2020,missing,,,,
+"Time Management,success,""January 29, 2020 1:30:51 PM CST"",1312,691101,"
+"TMS BD TT,success,""February 1, 2020 7:29:39 PM CST"",18,410373,"
+"TMS PRD,success,""February 5, 2020 11:12:14 PM CST"",227,51418,"
+"TMS Web,success,""February 1, 2020 7:29:29 PM CST"",15,410383,"
+"Token Atlantida App,success,""February 1, 2020 7:35:05 PM CST"",85,410047,"
+TPayExpedite (Template),missing,,,,
+"Tramas o Cubos,success,""February 6, 2020 11:04:30 AM CST"",193,8682,"
+"Transaccional Quioscos 2003,success,""February 5, 2020 11:08:58 PM CST"",156,51614,"
+"Transerver SQL Diario,success,""February 5, 2020 6:43:31 AM CST"",,110741,"
+TSM_proxy_template (Template),missing,,,,
+"TSM_proxy_vbasa_1,success,""February 6, 2020 9:12:33 AM CST"",652,15399,"
+TSM_proxy_vbasa_1-clone,missing,,,,
+TSM_proxy_vbasa_10,missing,,,,
+TSM_proxy_vbasa_2v2,missing,,,,
+TSM_proxy_vbasa_2v2-clone,missing,,,,
+TSM_proxy_vbasa_3v2,missing,,,,
+TSM_proxy_vbasa_3v2-clone,missing,,,,
+TSM_proxy_vbasa_4,missing,,,,
+TSM_proxy_vbasa_4-clone,missing,,,,
+TSM_proxy_vbasa_5,missing,,,,
+TSM_proxy_vbasa_5-clone,missing,,,,
+TSM_proxy_vbasa_6,missing,,,,
+TSM_proxy_vbasa_6-clone,missing,,,,
+TSM_proxy_vbasa_7,missing,,,,
+TSM_proxy_vbasa_7-clone,missing,,,,
+TSM_proxy_vbasa_8,missing,,,,
+TSM_proxy_vbasa_8-clone,missing,,,,
+tsmprxyvmntr76,missing,,,,
+UCCX-WFO-WFM-2VCPU,missing,,,,
+"VeeamBK,success,""February 5, 2020 7:07:31 AM CST"",6386,109301,"
+"virl.1.5.145.esxi,aged,""January 29, 2020 1:18:05 PM CST"",326,691867,"
+VM_Process_Maker,missing,,,,
+"VMware Converter,aged,""January 29, 2020 1:22:31 PM CST"",222,691601,"
+"VMware vCenter,success,""February 5, 2020 11:20:23 PM CST"",742,50929,"
+"vSphere_Replication_01,success,""February 5, 2020 5:18:40 AM CST"",1036,115832,"
+"vsrv-cajaempres,success,""February 4, 2020 7:03:21 PM CST"",147,152751,"
+"Vsrv-MoodleCentos,success,""February 1, 2020 7:34:14 PM CST"",257,410098,"
+"VSRVBIOMADM.ADBancat.hn,aged,""January 29, 2020 1:19:30 PM CST"",363,691782,"
+"vsrvblzerpprd,success,""January 29, 2020 1:49:24 PM CST"",2799,689988,"
+"vsrvR3Jubiliados,success,""February 4, 2020 9:14:14 PM CST"",659,144898,"
+"vsrvsaperpprod,success,""February 4, 2020 10:56:30 PM CST"",5671,138762,"
+VSRVSAPROUTER,missing,,,,
+"VSRVSAPSTORAGE,success,""February 4, 2020 5:54:56 AM CST"",430,200056,"
+"vsrvsaptrexprd,success,""February 4, 2020 7:11:56 PM CST"",616,152236,"
+"vsrvSAPuperform,success,""February 4, 2020 5:52:55 AM CST"",,200177,"
+"VSRVTRNRSQLHIST,success,""February 6, 2020 3:23:05 AM CST"",7748,36367,"
+"WATSON FTP,success,""February 4, 2020 9:06:33 PM CST"",240,145359,"
+"WATSON-API SERVER,success,""February 5, 2020 5:18:46 AM CST"",1074,115826,"
+"WATSON-BACKOFFICE,success,""February 4, 2020 9:02:20 PM CST"",84,145612,"
+"WATSON-DB,aged,""January 29, 2020 1:04:35 PM CST"",217,692677,"
+"WebService-IIS-PCI,success,""February 4, 2020 9:07:39 PM CST"",282,145293,"
+"WebServices Internos,aged,""January 29, 2020 1:17:32 PM CST"",334,691900,"
+"WebServices Terceros,success,""February 1, 2020 9:12:16 PM CST"",190,404216,"
+"ws1-60.170,success,""February 6, 2020 11:03:56 AM CST"",169,8716,"
+"ws2-60.171,success,""February 6, 2020 1:15:34 AM CST"",188,44018,"
+"WS3-60.172,success,""February 6, 2020 1:29:10 AM CST"",1457,43202,"
+"wsCerveceria,success,""February 4, 2020 11:04:26 AM CST"",190,181486,"
+"wsCerveceriaTrans,success,""February 4, 2020 1:12:01 PM CST"",164,173831,"
+"www.bancatlan.hn,success,""February 6, 2020 11:10:52 AM CST"",346,8300,"
+"www.invatlan.hn,success,""February 5, 2020 6:17:24 AM CST"",,112308,"

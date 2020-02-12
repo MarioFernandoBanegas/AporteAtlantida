@@ -1,7 +1,7 @@
 <?php
 
 	include 'plantillaservidores.php';
-	require '../libs/connection.php';
+	require '../Conexion/conexion.php';
 	$query = "SELECT s.IP_SERVIDOR, s.NOM_SERVIDOR, d.NOM_DBA, r.NOM_ADMINISTRADOR, p.NOM_ESTADO, s.ULTIMA_ACTUALIZACION,
 				o.NOM_SO,iif(s.PCI ='0','No','Si') PCI
 			  from SERVIDORES s inner join  CAT_DBAS d

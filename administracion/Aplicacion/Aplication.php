@@ -8,12 +8,6 @@ if (@!$_SESSION['user']) {
 }
 ?>
 
-<body class="bg-dark" oncontextmenu="return false">
-  <div class="container">
-    <br>
-    <div class="card card-register mx-auto mt-5">
-      <div align="center"><a href="../../index.php"><img src="../../media/logo.png" height="50" width="105"></a>
-      </div>
       <div class="card-header">Registro de Aplicaciones</div>
       <div class="card-body">
 

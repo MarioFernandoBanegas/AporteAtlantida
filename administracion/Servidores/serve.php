@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include "../header.php";
+  include "../../DiseñoFormularios.php";
   if (@!$_SESSION['user']) {
   //header("Location:login.php");
   }elseif ($_SESSION['rol']==2) {
@@ -8,31 +8,6 @@
   }
 ?>
 
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>SB</title>
-  <!-- Bootstrap core CSS-->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template-->
-  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <!-- Custom styles for this template-->
-  <link href="../css/sb-admin.css" rel="stylesheet">
-  <link rel="shortcut icon" href="../media/favicon.png" />
-
-</head>
-
-<body class="bg-dark" oncontextmenu="return false">
-  <div class="container">
-    <div class="card card-register mx-auto mt-5">
-      <div align="center"><a href="../index.php"><img src="../media/logo.png" height="50" width="105"></a>
-      </div>
       <div class="card-header">Servidores</div>
       <div class="card-body">
         <form action="../procs/script_serve.php" method="post" enctype="multipart/form-data">
@@ -286,19 +261,6 @@
                   </p>
                 </div>
               </div>
-
-              <?php  /*<div class="col-md-6">
-                <label for="exampleInputName">Contigencia</label>
-                <textarea  maxlength="500" rows="5"  style="text-align:center" value "<?php error_reporting(0)?>"value="<?php echo $contin ?>" type="text" class="form-control" id="contin" name="contin" placeholder="Ingrese la contigencia" required></textarea>
-              </div>
-
-              <div class="col-md-6">
-                <label for="exampleInputName">Observaciones</label>
-                <textarea  maxlength="500" rows="5"  style="text-align:center" value "<?php error_reporting(0)?>"value="<?php echo $observa ?>" type="text" class="form-control" id="observa" name="observa" placeholder="Ingrese la Observacion" required></textarea>
-              </div>
-            </div>
-          </div>
-          */?>
         </form>
         <p>
         <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">

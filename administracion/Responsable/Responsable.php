@@ -8,10 +8,6 @@
 }
 ?>
 
-<body oncontextmenu="return false" class="bg-dark">
-  <div class="container">
-    <div class="card card-register mx-auto mt-5">
-      <a href="../../index.php"><img src="../../media/logo.png" height="80" width="100"></a>
       <div class="card-header">Responsables de Servidores</div>
       <div class="card-body">
         <form action="../../procs/scritp_Responsable.php" method="post" enctype="multipart/form-data">

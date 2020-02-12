@@ -1,4 +1,4 @@
-<?php require 'libs/connection.php' ?>
+<?php require '../../Conexion/conexion.php' ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
